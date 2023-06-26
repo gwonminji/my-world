@@ -1,7 +1,7 @@
-export default function Sub(){
+export default function Sub3(){
     return(
         <main>
-            Sub
+            Sub3
         </main>
     )
 }

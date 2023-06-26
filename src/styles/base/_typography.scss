@@ -1,0 +1,23 @@
+/*
+typography
+*/
+@mixin font-face($name, $path, $weight: null, $style: null){
+    @font-face{
+        $font-source: 'local("#{$name}"), url("#{$path}.woff") format("woff"), url("#{$path}.woff2") format("woff2")';
+        font-family: quote($name);
+        font-weight: $weight;
+        font-style: $style;
+        src: unquote($font-source);
+    }
+}
+
+@include font-face("Pretendard", "../../assets/fonts/Pretendard-Regular", 400, normal);
+@include font-face("Pretendard", "../../assets/fonts/Pretendard-Medium", 500, normal);
+@include font-face("Pretendard", "../../assets/fonts/Pretendard-SemiBold", 600, normal);
+@include font-face("Pretendard", "../../assets/fonts/Pretendard-Bold", 700, normal);
+@include font-face("Pretendard", "../../assets/fonts/Pretendard-ExtraBold", 800, normal);
+@include font-face("Pretendard", "../../assets/fonts/Pretendard-Black", 900, normal);
+
+@include mobile {
+    
+}

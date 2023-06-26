@@ -1,0 +1,15 @@
+// :root{
+//     --primary: #fd6f09;
+// }
+// $color-header-point: #528d91;
+// $color-content-point: #fd6f09;
+// $point-color-mint:#17d4bb;
+// $color-success: #16bc56;
+
+$desktop: 1024px;
+$mobile: 1023px;
+$desktop-container: 1100px;
+$mobile-container: 100%;
+$form-width: 280px;
+
+$mobileInnerHeight: calc(var(--vh, 1vh) * 100);
