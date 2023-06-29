@@ -1,8 +1,12 @@
+@import "@styles/helpers/global";
+
 .header{
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     .inner{
-        height: 100px;
+        height: $headerHeight;
         display: flex;
         justify-content: space-between;
         align-items: center;

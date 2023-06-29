@@ -1,2 +1,9 @@
 @import "@styles/helpers/global";
 @import "@styles/base/typography";
+
+.wrap{
+    position: relative;
+}
+.inner{
+    padding: 0 120px;
+}

@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 function App() {
   return (
-    <>
+    <div className="wrap">
       <GlobalStyles />
       <Header />
       <BrowserRouter>
@@ -42,7 +42,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </>
+    </div>
   );
 }
 
