@@ -1,0 +1,28 @@
+.visual{
+    &-head{
+        padding: 0 10px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 30px;
+        background: gray;
+        span{
+            margin: 0 0 0 10px;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background: #000;
+        }
+    }
+    &-body{
+        background: lightgray;
+    }
+}
+.title{
+    font-size: 120px;
+    color: #333;
+    font-weight: 900;
+    span{
+        display: inline-block;
+    }
+}
