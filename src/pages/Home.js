@@ -15,26 +15,15 @@ export default function Home(){
     return(
         <main className={styles.main}>
             <section className={`${styles.section} ${styles.section1}`}>
-                <div className="inner">
-                    <Section1 />
-                </div>
+                <Section1 />
             </section>
             <section className={`${styles.section} ${styles.section2}`}>
                 <div className="inner">
-                    {/* <motion.div
-                        style={{ scale }}
-                    >section2
-                    </motion.div> */}
                     <Section2 />
                 </div>
             </section>
             <section className={`${styles.section} ${styles.section3}`}>
                 <div className="inner">
-                    {/* <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                    >section3
-                    </motion.div> */}
                     <Section3 />
                 </div>
             </section>
