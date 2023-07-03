@@ -39,9 +39,10 @@ export default function Home(){
                 </div>
             </section>
             <section className={`${styles.section} ${styles.section4}`}>
-                <div className="inner">
+                {/* <div className="inner">
                     <Section4 />                    
-                </div>
+                </div> */}
+                <Section4 />
             </section>
             <section className={`${styles.section} ${styles.section5}`}>
                 <div className="inner">
