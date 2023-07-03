@@ -1,26 +1,40 @@
 .main{
 }
 .section{
+    position: relative;
     // display: flex;
     // justify-content: center;
     // align-items: center;
     // min-height: 100vh;
-    padding: 160px 0;
+    // padding: 160px 0;
     // height: 100vh;
 }
 .section1{
     background: lightblue;
-    // height: 60vh;
+    height: calc(100vh - 50px);
+    // height: 100vh;
+    z-index: 1;
 }
 .section2{
+    padding: 200px 0;
     background: #fff;
 }
 .section3{
+    padding: 160px 0;
     background: lightgrey;
+    z-index: 1;
 }
 .section4{
+    padding: 100px 0;
     background: lightblue;
+    z-index: 1;
 }
 .section5{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    // padding: 120px 0;
+    height: 300px;
     background: lightgoldenrodyellow;
+    background-attachment: fixed;
 }

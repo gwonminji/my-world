@@ -4,35 +4,23 @@ import {
 
 import styles from "@styles/components/home/section4.module.scss";
 
-export default function section4(){
-    const marqueeAnim = {
-        animate: {
-            x: [0, -1035],
-            transition: {
-                x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 6,
-                    ease: "linear",
-                }
-            }
+export default function Section5(){
+    const variants = {
+        start: {
+            opacity: 0
+        },
+        end: {
+            opacity: 1
         }
     }
     return(
-        <div>
-            <div className={styles.marquee}>
-                <motion.div
-                    className={styles.track}
-                    variants={marqueeAnim}
-                    animate="animate"
-                >
-                    <h1>
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
-                    </h1>
-                </motion.div>
-            </div>
-        </div>
+        <motion.div
+            className={styles.box}
+            variants={variants}
+            initial="start"
+            whileInView="end"
+        >
+            section4
+        </motion.div>
     )
 }
