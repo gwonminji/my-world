@@ -1,0 +1,20 @@
+.list{
+
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  &:not(:first-child){
+    margin: 100px 0 0 0;
+  }
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  background: #fff;
+}
+.text-box{
+  flex: 1;
+  padding: 40px;
+  border: 1px solid #fff;
+}
