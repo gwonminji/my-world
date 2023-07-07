@@ -1,6 +1,4 @@
-import {
-    motion
-} from "framer-motion";
+import { motion } from "framer-motion";
 
 import styles from "@styles/components/home/section3.module.scss";
 
@@ -42,6 +40,8 @@ export default function Section3(){
                 <motion.li 
                     className={styles.item}
                     variants={item}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                 >
                     <div className={styles.box}>box1</div>
                     <div className={styles['text-box']}>text1</div>
@@ -49,6 +49,8 @@ export default function Section3(){
                 <motion.li 
                     className={styles.item}
                     variants={item}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                 >
                     <div className={styles.box}>box2</div>
                     <div className={styles['text-box']}>text2</div>
@@ -56,6 +58,8 @@ export default function Section3(){
                 <motion.li 
                     className={styles.item}
                     variants={item}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                 >
                     <div className={styles.box}>box3</div>
                     <div className={styles['text-box']}>text3</div>

@@ -78,14 +78,15 @@ export default function Section1(){
                 className={styles.scroll}
                 style={{ opacity: scrollYProgress }}
             >
-                Scroll Down
+                {/* Scroll Down */}
+                스크롤 하면 글씨가 점점 사라짐
                 <motion.span
                     className={styles.bounce}
                     variants={bounce}
                     initial="start"
                     animate="end"
                 >
-                ️❤️
+                {/* ️❤️ */}
                 </motion.span>
             </motion.div>
         </div>
