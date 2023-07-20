@@ -35,10 +35,13 @@ const Envelope = ({ children }) => {
     // const zRotAnim = useTransform(scrollYProgress, [0, 0.2, 1], [0, 3, 0])
 
     useEffect(() => {
-        scrollY.onChange(() => console.log(`scrollY : ${scrollY.get()}, scrollYProgress : ${scrollYProgress.get()}`))
+        scrollY.onChange(() => 
+        // console.log(`scrollY : ${scrollY.get()}, scrollYProgress : ${scrollYProgress.get()}`)
+        []
+        )
     }, [scrollY, scrollYProgress])
     scrollYProgress.onChange(x => {
-        console.log("env x ", x);
+        console.log("Envelope : ", x);
 
         // setFfLayer(x > 0.4 ? -1 : 0)
         setFfLayer(x > 0.7 ? -1 : 0)
@@ -84,7 +87,7 @@ const Letter = () => {
     // const yPosAnim = useTransform(scrollYProgress, [0, 0.1, 1], [0, -250, -100])
     
     scrollYProgress.onChange(x => {
-        console.log("letter x ", x);
+        console.log("Letter : ", x);
         // setScale(x > 0.6 ? scaleAnim : '');
         // setPosition(x > 0.6 ? yPosAnim : '');
     })
@@ -102,7 +105,7 @@ export default function Section5(){
     const [visible, setVisible] = useState(0);
     const { scrollYProgress } = useScroll(); 
     scrollYProgress.onChange(x => {
-        // console.log(x);
+        console.log("전체 : ", x);
         setVisible(x > 0.6 ? x : 0)
     })
     return(
