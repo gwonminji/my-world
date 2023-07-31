@@ -5,7 +5,7 @@ export default function Header(){
         <header className={styles.header}>
             <div className={styles.inner}>
                 <div className={styles.logo}>hello</div>
-                <button className={styles.btn}>button</button>
+                {/* <button className={styles.btn}>button</button> */}
             </div>
         </header>
     )
