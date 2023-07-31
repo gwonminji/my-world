@@ -1,7 +1,7 @@
 @import "@styles/helpers/global";
 
 .inner{
-    @include inner;
+    @include desktop-inner;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,4 +43,16 @@
 }
 .bounce{
     display: inline-block;
+}
+
+@include tablet{
+    .inner{
+        @include tablet-inner;
+    }
+}
+
+@include mobile{
+    .inner{
+        @include mobile-inner;
+    }
 }

@@ -1,11 +1,17 @@
-@mixin desktop{
-    @media (min-width: $desktop){
-        @content;
-    }
-}
+// @mixin desktop{
+//     @media (min-width: $desktop){
+//         @content;
+//     }
+// }
 
-@mixin min-desktop{
-    @media (max-width: $desktop-container){
+// @mixin min-desktop{
+//     @media (max-width: $desktop-container){
+//         @content;
+//     }
+// }
+
+@mixin tablet{
+    @media (max-width: $tablet){
         @content;
     }
 }
@@ -92,9 +98,17 @@
         }
     }
 }
-@mixin inner{
-    max-width: 1200px;
+@mixin desktop-inner{
+    max-width: $desktop-container;
     margin: 0 auto;
     // padding: 0 40px;
     padding: 0 100px;
+}
+@mixin tablet-inner{
+    max-width: $tablet-container;
+    padding: 0 90px;
+}
+@mixin mobile-inner{
+    max-width: $mobile-container;
+    padding: 0 80px;
 }

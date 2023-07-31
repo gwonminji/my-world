@@ -24,3 +24,29 @@
         border: 1px solid black;
     }
 }
+
+@include tablet{
+    .header{
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+        .btn{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@include mobile{
+    .header{
+        .logo{
+            width: 40px;
+            height: 40px;
+        }
+        .btn{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

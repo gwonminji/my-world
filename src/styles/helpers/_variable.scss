@@ -6,9 +6,11 @@
 // $point-color-mint:#17d4bb;
 // $color-success: #16bc56;
 
-$desktop: 1024px;
-$mobile: 1023px;
-$desktop-container: 1100px;
+// $desktop: 1024px;
+$tablet: 1023px;
+$mobile: 767px;
+$desktop-container: 1200px;
+$tablet-container: 100%;
 $mobile-container: 100%;
 
 $mobileInnerHeight: calc(var(--vh, 1vh) * 100);
