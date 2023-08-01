@@ -15,6 +15,9 @@ import "@styles/app.scss"
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
+  *{
+    box-sizing: border-box;
+  }
   body,
   h1,
   h2,

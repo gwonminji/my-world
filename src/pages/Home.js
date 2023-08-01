@@ -23,12 +23,13 @@ export default function Home(){
                 </div>
             </section>
             <section className={`${styles.section} ${styles.section3}`}>
-                <div className="inner">
+                {/* <div className="inner">
                     <Section3 />
-                </div>
+                </div> */}
+                <Section3 />
             </section>
             <section className={`${styles.section} ${styles.section4}`}>
-                <Section4 />
+                {/* <Section4 /> */}
             </section>
             <section className={`${styles.section} ${styles.section5}`}>
                 <Section5 />
