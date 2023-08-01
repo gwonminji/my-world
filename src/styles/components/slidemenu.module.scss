@@ -1,51 +1,45 @@
 @import "@styles/helpers/global";
-.aside-wrap{
-    background: #fff;
-}
-.slidemenu{
-    //position: fixed;
-    //right: 0;
-    // background: #fff;
-    //z-index: 200;
-    // &::before{
-    //     content: '';
-    //     position: fixed;
-    //     top: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
-    //     background: rgba(0, 0, 0, 0.5);
-    // }
-    // background: rgba(0, 0, 0, 0.5);
-}
-.btn-gnb{
+.btn{
     position: fixed;
     top: 20px;
     right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
     border: 1px solid black;
     z-index: 9999;
     cursor: pointer;
-}
-.aside{
-    position: fixed;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    height: 100vh;
-    z-index: 9999;
-    // &::before{
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
-    //     background: rgba(0, 0, 0, 0.5);
-    // }
+    &:hover{
+        span{
+            scale: 1.1;
+        }
+    }
+    span{
+        display: block;
+        width: 80%;
+        height: 2px;
+        margin: 6px 0;
+        background: #000;
+        transition: 0.15s ease-in-out;
+    }
+    &--active{
+        span{
+            width: 90%;
+            margin: -1px 0;
+            &:nth-child(1){
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg);
+            }
+        }
+    }
 }
 .dimmed{
     position: fixed;
@@ -56,11 +50,27 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 9998;
 }
+.gnb{
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100vh;
+    z-index: 9999;
+    &__item{
+
+    }
+    &__link{
+        display: block;
+    }
+}
 .menu{
     padding: 100px 0;
-}
-.link{
-    display: block;
+    &-link{
+        display: block;
+    }
 }
 
 @include tablet{

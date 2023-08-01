@@ -38,49 +38,50 @@ const sideVariants = {
 export default function SlideMenu(){
     const [open, cycleOpen] = useCycle(false, true);
     return(
-        <div className={styles["aside-wrap"]}>
-            {open && (
-                <AnimatePresence>
-                    <div className={styles.dimmed}></div>
-                </AnimatePresence>
-            )}
+        <aside>
             <AnimatePresence>
                 {open && (
-                    <motion.aside
-                        className={styles.aside}
-                        initial={{ width: 0 }}
-                        animate={{
-                            width: "50vw"
-                        }}
-                        exit={{
-                            width: 0,
-                            transition: { delay: 0.7, duration: 0.3 }
-                        }}
-                    >
-                        {/* <div className={styles.dimmed}></div> */}
+                    <div>
+                        <div className={styles.dimmed}></div>
                         <motion.div
-                            className={styles.menu}
-                            initial="closed"
-                            animate="open"
-                            exit="closed"
-                            variants={sideVariants}
+                            className={styles.gnb}
+                            initial={{ width: 0 }}
+                            animate={{
+                                width: "80vw"
+                            }}
+                            exit={{
+                                width: 0,
+                                transition: { delay: 0.7, duration: 0.3 }
+                            }}
                         >
-                        {links.map(({ name, to, id }) => (
-                            <motion.a
-                                key={id}
-                                href={to}
-                                className={styles.link}
-                                whileHover={{ scale: 1.1 }}
-                                variants={itemVariants}
+                            <motion.div
+                                className={styles["gnb__item"]}
+                                initial="closed"
+                                animate="open"
+                                exit="closed"
+                                variants={sideVariants}
                             >
-                            {name}
-                            </motion.a>
-                        ))}
+                            {links.map(({ name, to, id }) => (
+                                <motion.a
+                                    key={id}
+                                    href={to}
+                                    className={styles["gnb__link"]}
+                                    whileHover={{ scale: 1.1 }}
+                                    variants={itemVariants}
+                                >
+                                {name}
+                                </motion.a>
+                            ))}
+                            </motion.div>
                         </motion.div>
-                    </motion.aside>
-                    )}
+                    </div>
+                )}
             </AnimatePresence>
-            <button className={styles["btn-gnb"]} onClick={cycleOpen}>button</button>
-        </div>
+            <button className={open ? `${styles.btn} ${styles["btn--active"]}` : styles.btn} onClick={cycleOpen}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </aside>
     )
 }
