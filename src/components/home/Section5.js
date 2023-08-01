@@ -12,7 +12,7 @@ export default function section4(){
                 x: {
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 6,
+                    duration: 12,
                     ease: "linear",
                 }
             }

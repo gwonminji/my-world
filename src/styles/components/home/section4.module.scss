@@ -39,3 +39,25 @@
     box-sizing: border-box;
     position: absolute;
 }
+
+/**/
+.out{
+
+}
+.title1{
+    font-size: 60px;
+    margin: 200px 0 100px 0;
+}
+.title2{
+    font-size: 40px;
+    margin: 0 0 100px 0;
+}
+.box{
+    padding: 40px;
+    margin: 0 auto 100px;
+    width: 500px;
+    height: 300px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 12px;
+}

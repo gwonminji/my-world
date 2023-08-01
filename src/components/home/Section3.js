@@ -1,3 +1,4 @@
+import { useRef } from "react"; 
 import { motion, useScroll } from "framer-motion";
 
 import styles from "@styles/components/home/section3.module.scss";
@@ -28,14 +29,17 @@ export default function Section3(){
     //         y: 0 
     //     }
     // }
-    const { scrollYProgress } = useScroll();
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+    });
     const list = [
         {id: 1, title: "리스트1"},
         {id: 2, title: "리스트2"},
         {id: 3, title: "리스트3"},
     ]
     return(
-        <div className={styles.inner}>
+        <div className={styles.inner} ref={ref}>
             <div className={styles["sticky-box"]}>
                 <h1>스티키1</h1>
                 <h2>스티키2</h2>

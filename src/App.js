@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
   ${reset}
   *{
     box-sizing: border-box;
+    text-decoration: none;
   }
   body,
   h1,
