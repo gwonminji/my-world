@@ -75,6 +75,9 @@
 .img-box{
   position: relative;
   width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
   &::before{  
     content: '';
     display: block;
@@ -91,8 +94,10 @@
   }
 }
 .text-box{
-  padding: 40px;
-  background: yellow;
+  padding: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  @include card-box-shadow;
   p{
     margin: 10px 0;
   }

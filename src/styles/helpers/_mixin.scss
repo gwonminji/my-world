@@ -98,17 +98,25 @@
         }
     }
 }
+
 @mixin desktop-inner{
     max-width: $desktop-container;
     margin: 0 auto;
     // padding: 0 40px;
     padding: 0 100px;
 }
+
 @mixin tablet-inner{
     max-width: $tablet-container;
     padding: 0 90px;
 }
+
 @mixin mobile-inner{
     max-width: $mobile-container;
     padding: 0 80px;
+}
+
+@mixin card-box-shadow{
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }

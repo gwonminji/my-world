@@ -15,7 +15,7 @@
         justify-content: end;
         align-items: center;
         height: 30px;
-        background: gray;
+        // background: gray;
         span{
             margin: 0 0 0 10px;
             width: 14px;
@@ -26,7 +26,7 @@
     }
     &-body{
         padding: 40px;
-        background: lightgray;
+        // background: lightgray;
     }
 }
 .title{
@@ -39,7 +39,10 @@
 }
 .scroll{
     padding: 40px 0;
+    font-size: 18px;
+    color: #fff;
     text-align: center;
+    letter-spacing: 6px;
 }
 .bounce{
     display: inline-block;

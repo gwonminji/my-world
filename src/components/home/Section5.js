@@ -4,7 +4,7 @@ import {
 
 import styles from "@styles/components/home/section5.module.scss";
 
-export default function section4(){
+export default function section5(){
     const marqueeAnim = {
         animate: {
             x: [0, -1035],
@@ -27,8 +27,6 @@ export default function section4(){
                     animate="animate"
                 >
                     <h1>
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
                         ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
                     </h1>
                 </motion.div>

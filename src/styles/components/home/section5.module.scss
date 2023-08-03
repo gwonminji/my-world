@@ -1,22 +1,33 @@
+@import "@styles/helpers/global";
+
 .marquee {
   position: relative;
   width: 100vw;
   max-width: 100%;
   height: 200px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .track {
   position: absolute;
   white-space: nowrap;
+  h1{
+    // margin: 20px 0;
+    font-size: 200px;
+    font-weight: 900;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $color-dark-navy;
+    text-transform: uppercase;
+  }
 }
 
-.track > h1 {
-  margin: 20px 0;
-  font-size: 8rem;
-  font-family: Antonio;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
-  text-transform: uppercase;
-}
+// .track > h1 {
+//   margin: 20px 0;
+//   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+//   -webkit-text-stroke-width: 2px;
+//   -webkit-text-stroke-color: $color-dark-navy;
+//   text-transform: uppercase;
+//   font-size: 100px;
+//   font-weight: 900;
+// }

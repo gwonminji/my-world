@@ -9,7 +9,7 @@ import {
 
 import styles from "@styles/components/home/section4.module.scss";
 
-export default function Section5(){ 
+export default function Section4(){ 
     const { scrollYProgress } = useScroll(); 
     scrollYProgress.onChange(x => {
         console.log("전체 : ", x);

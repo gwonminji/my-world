@@ -1,3 +1,5 @@
+// import { Link } from "react-router-dom";
+
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 import styles from "@styles/components/slidemenu.module.scss"
@@ -71,6 +73,15 @@ export default function SlideMenu(){
                                 >
                                 {name}
                                 </motion.a>
+                                // <Link 
+                                //     to={to}
+                                //     key={id}
+                                //     className={styles["gnb__link"]}
+                                //     whileHover={{ scale: 1.1 }}
+                                //     variants={itemVariants}
+                                // >
+                                // {name}
+                                // </Link>
                             ))}
                             </motion.div>
                         </motion.div>

@@ -40,6 +40,7 @@ function App() {
       <Header />
       <SlideMenu />
       <BrowserRouter>
+        {/* <SlideMenu /> */}
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
