@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { AnimatePresence } from "framer-motion";
+
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import SlideMenu from "@components/SlideMenu";
@@ -41,12 +43,14 @@ function App() {
       <SlideMenu />
       <BrowserRouter>
         {/* <SlideMenu /> */}
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/work" element={<Work />}/>
-          <Route path="/contact" element={<Contact />}/>
-        </Routes>
+        <AnimatePresence>
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/work" element={<Work />}/>
+            <Route path="/contact" element={<Contact />}/>
+          </Routes>
+        </AnimatePresence>
       </BrowserRouter>
       <Footer />
     </div>

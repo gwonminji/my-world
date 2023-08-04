@@ -11,7 +11,6 @@ import Section5 from '@components/home/Section5';
 import styles from "@styles/pages/home.module.scss";
 
 export default function Home(){
-
     return(
         <main className={styles.main}>
             <section className={`${styles.section} ${styles.section1}`}>
