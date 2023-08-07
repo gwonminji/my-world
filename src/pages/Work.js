@@ -93,7 +93,7 @@ export default function Work(){
                         filters.map((item, i) => (
                             <button 
                                 className={active === item && styles.active} 
-                                onClick={handleClick}
+                                onClick={() => handleClick(item)}
                             >
                             {item}
                             </button>
