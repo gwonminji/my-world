@@ -16,7 +16,7 @@
     .logo{
         width: 60px;
         height: 60px;
-        // border: 1px solid black;
+        border: 1px solid lightgray;
         img{
             @include img-100auto;
         }

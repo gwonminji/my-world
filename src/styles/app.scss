@@ -4,6 +4,7 @@
 .wrap{
     position: relative;
     padding: 0 0 240px 0;
+    overflow-x: hidden;
 }
 .inner{
     @include desktop-inner;
