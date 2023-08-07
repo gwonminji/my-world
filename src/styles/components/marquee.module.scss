@@ -1,5 +1,10 @@
 @import "@styles/helpers/global";
 
+.marquee-wrap{
+  position: fixed;
+  width: 100%;
+  bottom: 40px;
+}
 .marquee {
   position: relative;
   width: 100vw;

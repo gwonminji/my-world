@@ -6,7 +6,7 @@ import Section1 from '@components/home/Section1';
 import Section2 from '@components/home/Section2';
 import Section3 from '@components/home/Section3';
 import Section4 from '@components/home/Section4';
-import Section5 from '@components/home/Section5';
+import Marquee from '@components/Marquee';
 
 import styles from "@styles/pages/home.module.scss";
 
@@ -38,9 +38,7 @@ export default function Home(){
                     <Section4 />
                 </div>
             </section>
-            <section className={`${styles.section} ${styles.section5}`}>
-                <Section5 />
-            </section>
+            <Marquee />
         </motion.main>
     )
 }

@@ -3,29 +3,91 @@
     
 }
 .section{
+    position: relative;
+    padding: 180px 0;
+    z-index: 1;
     &.section1{
+        padding: 0;
         height: 100vh;
         background: $color-dark-navy;
     }
     &.section2{
-
+        background: $color-light-gray;
+    }
+    &.section3{
+        background: #fff;
+    }
+    &.section4{
+        padding: 0;
     }
 }
-
-.visual{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.i-think{
 }
-.visual-title{
-    font-size: 16vw;
-    color: #fff;
-    font-weight: 900;
-    span{
+.text{
+    font-size: 2.5vw;
+}
+.skill{
+    margin: 160px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    strong{
         display: block;
-        &:nth-child(2){
-            text-align: right;
+        margin: 0 0 12px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    li{
+        padding: 20px;
+        font-size: 18px;
+        @include card-box-shadow;
+    }
+}
+.history{
+    // margin: 160px 0 0 0;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        background: $color-dark-navy;
+        z-index: 1;
+    }
+    li{
+        position: relative;
+        width: 50%;
+        padding: 40px;
+        @include card-box-shadow;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -8px;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border: 2px solid $color-dark-navy;
+            border-radius: 100%;
+            z-index: 2;
+        }
+        &:not(:first-child){
+            margin: 80px 0 0 0;
+        }
+        &:nth-child(odd){
+            margin-left: auto;
+        }
+        .box1{
+            
+        }
+        .box2{
+
         }
     }
 }
