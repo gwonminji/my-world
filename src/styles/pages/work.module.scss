@@ -1,1 +1,43 @@
 @import "@styles/helpers/global";
+
+.section{
+    position: relative;
+    padding: 180px 0;
+    z-index: 1;
+    &.section1{
+        padding: 0;
+        height: 100vh;
+        background: $color-dark-navy;
+    }
+    &.section2{
+        background: #fff;
+    }
+}
+.filter{
+    margin: 80px 0 0 0;
+    display: grid;
+    grid-gap: 10px;
+    button{
+        &:active{
+            border: 1px solid #ff0000;
+        }
+    }
+}
+.list{
+    margin: 80px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    li{
+        border-radius: 10px;
+    }
+}
+.img-box{
+
+}
+.img{
+    @include img-center-crop;
+}
+.text-box{
+
+}
