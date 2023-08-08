@@ -10,6 +10,7 @@
         padding: 0;
         height: 100vh;
         background: $color-dark-navy;
+        overflow: hidden;
     }
     &.section2{
         background: $color-light-gray;
@@ -24,10 +25,10 @@
 .i-think{
 }
 .text{
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 .skill{
-    margin: 160px 0 0 0;
+    margin: 100px 0 0 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -82,6 +83,12 @@
         }
         &:nth-child(odd){
             margin-left: auto;
+        }
+        &:nth-child(even){
+            &::before{
+                left: auto;
+                right: -8px;
+            }
         }
         .box1{
             

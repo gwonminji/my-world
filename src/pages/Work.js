@@ -15,39 +15,114 @@ export default function Work(){
     const data = {
         items: [
             {
+                id: 1,
+                cate: "1",
                 img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
-                cate: "1",
-                text: "cate1"
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
             },
             {
+                id: 2,
+                cate: "2",
                 img: "https://images.unsplash.com/photo-1547731030-cd126f44e9c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hY2Jvb2t8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=200&q=75",
-                cate: "2",
-                text: "cate2"
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }                
             },
             {
+                id: 3,
+                cate: "1",
                 img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
-                cate: "1",
-                text: "cate1"
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
             },
             {
+                id: 4,
+                cate: "3",
                 img: "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
-                cate: "3",
-                text: "cate3"
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
             },
             {
-                img: "https://images.unsplash.com/photo-1560060141-7b9018741ced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
-                cate: "1",
-                text: "cate1"
-            },
-            {
-                img: "https://images.unsplash.com/photo-1630396592772-649470e66096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
-                cate: "3",
-                text: "cate3"
-            },
-            {
-                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                id: 5,
                 cate: "2",
-                text: "cate2"
+                img: "https://images.unsplash.com/photo-1560060141-7b9018741ced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
+            },
+            {
+                id: 6,
+                cate: "1",
+                img: "https://images.unsplash.com/photo-1630396592772-649470e66096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
+            },
+            {
+                id: 7,
+                cate: "3",
+                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
+            },
+            {
+                id: 8,
+                cate: "3",
+                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
+            },
+            {
+                id: 9,
+                cate: "1",
+                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
+            },
+            {
+                id: 10,
+                cate: "2",
+                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                year: "0000",
+                title: "title",
+                text: "text",
+                details: {
+                    text: "detail-text"
+                }
             }
         ]
     };
@@ -73,6 +148,7 @@ export default function Work(){
             setDisplayData(filteredData);
         }, 400);
     }
+
     return(
         <motion.main 
             className={styles.about}
@@ -86,68 +162,83 @@ export default function Work(){
                 </div>
             </section>
             <section className={`${styles.section} ${styles.section2}`}>
-                <div className="inner">
+                <motion.div 
+                    className="inner"
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                        opacity: 1,
+                        transition: {
+                            delay: 0.25
+                        }
+                    }}
+                >
                     <h1 className="section-title">title</h1>
                     <div className={styles.filter}>
                     {
                         filters.map((item, i) => (
-                            <button 
+                            <motion.button 
                                 className={active === item && styles.active} 
                                 onClick={() => handleClick(item)}
+                                whileHover={{ 
+                                    scale: 1.1,
+                                    transition: {
+                                        duration: 0.1
+                                    }
+                                }}
+                                whileTap={{ scale: 0.9 }}
+                                title={item}
                             >
                             {item}
-                            </button>
+                            </motion.button>
                         ))
                     }
                     </div>
                     <ul className={styles.list}>
                         <AnimatePresence>
                             {
-                                displayData.map(({img, cate, text}, i) => (
+                                displayData.map((item, i) => (
                                     <motion.li
                                         key={i}
-                                        layout
-                                        initial={{ transform: "scale(0) "}}
-                                        animate={{ transform: "scale(1) "}}
-                                        exit={{ transform: "scale(0) "}}
+                                        // layout
+                                        initial={{ transform: "scale(0)" }}
+                                        animate={{ transform: "scale(1)" }}
+                                        viewport={{ once: true }}
+                                        exit={{ transform: "scale(0)" }}
                                     >
                                         <div className={styles["img-box"]}>
                                             <motion.img
-                                                src={img}
+                                                src={item.img}
                                                 className={styles.img}
                                             />
                                         </div>
-                                        <div className={styles["text-box"]}>{text}</div>
+                                        <motion.div 
+                                            className={styles["text-box"]}
+                                            initial={{ opacity: 0 }}
+                                            whileHover={{ 
+                                                opacity: 1,
+                                                transition: {
+                                                    duration: 0.25
+                                                }
+                                            }}
+                                        >
+                                            <strong>{item.title}</strong>
+                                            <motion.button
+                                                whileHover={{ 
+                                                    scale: 1.1,
+                                                    transition: {
+                                                        duration: 0.25
+                                                    } 
+                                                }}
+                                                title="more"
+                                            >more
+                                            </motion.button>
+                                        </motion.div>
                                     </motion.li>
                                 ))
                             }
                         </AnimatePresence>                            
-                    </ul>
-                        {/* <div>
-                            <AnimatePresence>
-                            {displayData.map(({ img, cate }, i) => (
-                                <motion.div
-                                    style={{ overflow: "hidden" }}
-                                    key={i}
-                                    layout
-                                    initial={{ transform: "scale(0)" }}
-                                    animate={{ transform: "scale(1)" }}
-                                    exit={{ transform: "scale(0)" }}
-                                >
-                                <motion.img
-                                    src={img}
-                                    className="rounded"
-                                    alt="nothing"
-                                    width="100%"
-                                />
-                                </motion.div>
-                            ))}
-                            {
-                                displayData.map(({img}, i) => <div key={i}>{img}</div>)
-                            }
-                            </AnimatePresence>
-                        </div> */}
-                </div>
+                    </ul>                        
+                </motion.div>
             </section>
             <Marquee />
         </motion.main>
