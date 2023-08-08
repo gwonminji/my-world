@@ -8,7 +8,7 @@ export default function Modal(props){
                 <div className={styles.head}>
                     <button type="button" 
                         className={styles.close}
-                        onClick={() => props.isModal(false)} 
+                        onClick={() => props.modalHandler()} 
                         title="닫기"
                     >
                         닫기
@@ -16,7 +16,7 @@ export default function Modal(props){
                 </div>
                 <div className={styles.body}>
                     모달
-                    {props.state}
+                    {props.idx}
                 </div>
             </div>
         </div>
