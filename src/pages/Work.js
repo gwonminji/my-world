@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import { motion, AnimatePresence } from "framer-motion";
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 import Visual from '@components/Visual';
 import Marquee from '@components/Marquee';
@@ -17,7 +18,7 @@ export default function Work(){
             {
                 id: 1,
                 cate: "1",
-                img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -39,7 +40,7 @@ export default function Work(){
             {
                 id: 3,
                 cate: "1",
-                img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -50,7 +51,7 @@ export default function Work(){
             {
                 id: 4,
                 cate: "3",
-                img: "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                img: "https://img.freepik.com/premium-vector/summer-background-layout-banners-design-horizontal-poster-greeting-card-header_16148-1225.jpg",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -61,7 +62,7 @@ export default function Work(){
             {
                 id: 5,
                 cate: "2",
-                img: "https://images.unsplash.com/photo-1560060141-7b9018741ced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJz5aO6vGK9JHCYgmOoSg0I2QgzgCFFz1rtg&usqp=CAU",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -72,7 +73,7 @@ export default function Work(){
             {
                 id: 6,
                 cate: "1",
-                img: "https://images.unsplash.com/photo-1630396592772-649470e66096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                img: "https://watermark.lovepik.com/photo/20211208/large/lovepik-vertical-shot-vertical-screen-country-road-green-picture_501582676.jpg",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -83,7 +84,7 @@ export default function Work(){
             {
                 id: 7,
                 cate: "3",
-                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -104,8 +105,8 @@ export default function Work(){
             },
             {
                 id: 9,
-                cate: "1",
-                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                cate: "2",
+                img: "https://images.unsplash.com/photo-1630396592772-649470e66096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -115,8 +116,8 @@ export default function Work(){
             },
             {
                 id: 10,
-                cate: "2",
-                img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=75",
+                cate: "1",
+                img: "https://pbs.twimg.com/media/EFHNcJQUcAI_acX.jpg",
                 year: "0000",
                 title: "title",
                 text: "text",
@@ -193,51 +194,56 @@ export default function Work(){
                         ))
                     }
                     </div>
-                    <ul className={styles.list}>
-                        <AnimatePresence>
-                            {
-                                displayData.map((item, i) => (
-                                    <motion.li
-                                        key={i}
-                                        // layout
-                                        initial={{ transform: "scale(0)" }}
-                                        animate={{ transform: "scale(1)" }}
-                                        viewport={{ once: true }}
-                                        exit={{ transform: "scale(0)" }}
-                                    >
-                                        <div className={styles["img-box"]}>
-                                            <motion.img
-                                                src={item.img}
-                                                className={styles.img}
-                                            />
-                                        </div>
-                                        <motion.div 
-                                            className={styles["text-box"]}
-                                            initial={{ opacity: 0 }}
-                                            whileHover={{ 
-                                                opacity: 1,
-                                                transition: {
-                                                    duration: 0.25
-                                                }
-                                            }}
+                    <ResponsiveMasonry
+                        columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+                    >
+                        <Masonry className={styles.list}>
+                            {/* <AnimatePresence> */}
+                                {
+                                    displayData.map((item, i) => (
+                                        <motion.div
+                                            key={i}
+                                            // layout
+                                            initial={{ transform: "scale(0)" }}
+                                            animate={{ transform: "scale(1)" }}
+                                            viewport={{ once: true }}
+                                            exit={{ transform: "scale(0)" }}
+                                            className={styles["list-item"]}
                                         >
-                                            <strong>{item.title}</strong>
-                                            <motion.button
+                                            <div className={styles["img-box"]}>
+                                                <motion.img
+                                                    src={item.img}
+                                                    className={styles.img}
+                                                />
+                                            </div>
+                                            <motion.div 
+                                                className={styles["text-box"]}
+                                                initial={{ opacity: 0 }}
                                                 whileHover={{ 
-                                                    scale: 1.1,
+                                                    opacity: 1,
                                                     transition: {
                                                         duration: 0.25
-                                                    } 
+                                                    }
                                                 }}
-                                                title="more"
-                                            >more
-                                            </motion.button>
+                                            >
+                                                <strong>{item.title}</strong>
+                                                <motion.button
+                                                    whileHover={{ 
+                                                        scale: 1.1,
+                                                        transition: {
+                                                            duration: 0.25
+                                                        } 
+                                                    }}
+                                                    title="more"
+                                                >more
+                                                </motion.button>
+                                            </motion.div>
                                         </motion.div>
-                                    </motion.li>
-                                ))
-                            }
-                        </AnimatePresence>                            
-                    </ul>                        
+                                    ))
+                                }
+                            {/* </AnimatePresence>                             */}
+                        </Masonry>  
+                    </ResponsiveMasonry>                      
                 </motion.div>
             </section>
             <Marquee />
