@@ -1,0 +1,38 @@
+@import "@styles/helpers/global";
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.dimmed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.content{
+    width: 1000px;
+    @include card-box-shadow;
+    border-radius: 20px;
+    z-index: 9999;
+}
+.head{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+}
+.body{
+    padding: 0 20px;
+}
+

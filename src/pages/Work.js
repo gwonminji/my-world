@@ -5,6 +5,7 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 import Visual from '@components/Visual';
 import Marquee from '@components/Marquee';
+import Modal from '@components/Modal';
 
 import styles from "@styles/pages/work.module.scss";
 
@@ -150,6 +151,10 @@ export default function Work(){
         }, 400);
     }
 
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const isModal = () => setModalOpen(!modalOpen);
+
     return(
         <motion.main 
             className={styles.about}
@@ -178,7 +183,8 @@ export default function Work(){
                     {
                         filters.map((item, i) => (
                             <motion.button 
-                                className={active === item && styles.active} 
+                                key={i}
+                                className={active === item && styles.active}
                                 onClick={() => handleClick(item)}
                                 whileHover={{ 
                                     scale: 1.1,
@@ -234,6 +240,7 @@ export default function Work(){
                                                             duration: 0.25
                                                         } 
                                                     }}
+                                                    onClick={isModal}
                                                     title="more"
                                                 >more
                                                 </motion.button>
@@ -247,6 +254,9 @@ export default function Work(){
                 </motion.div>
             </section>
             <Marquee />
+            {
+                modalOpen && <Modal isModal={isModal} />
+            }
         </motion.main>
     )
 }
