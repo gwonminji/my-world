@@ -1,1 +1,25 @@
 @import "@styles/helpers/global";
+
+.contact{
+    min-height: 100vh;
+}
+.section{
+    // padding: 180px 0;
+    position: relative;
+    
+    // background: $color-dark-navy;
+    z-index: 1;
+    &.section1{
+        height: 100vh;
+        background: $color-dark-navy;
+    }
+    &.section2{
+        padding: 180px 0;
+        background: $color-light-gray;
+    }
+}
+.form{
+    margin: 0 auto;
+    width: 600px;
+    @include card-box-shadow;
+}

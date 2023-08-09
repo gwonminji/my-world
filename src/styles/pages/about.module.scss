@@ -1,6 +1,6 @@
 @import "@styles/helpers/global";
 .about{
-    
+
 }
 .section{
     position: relative;
@@ -52,22 +52,22 @@
     }
     li{
         position: relative;
-        width: 50%;
+        width: calc(50% - 1px);
         padding: 40px;
         @include card-box-shadow;
+        z-index: 1;
         &::before{
             content: '';
             display: block;
             position: absolute;
             top: 50%;
-            left: -8px;
+            left: -9px;
             transform: translateY(-50%);
             width: 12px;
             height: 12px;
             background: #fff;
             border: 2px solid $color-dark-navy;
             border-radius: 100%;
-            z-index: 2;
         }
         &:not(:first-child){
             margin: 20px 0 0 0;
@@ -79,7 +79,7 @@
             text-align: right;
             &::before{
                 left: auto;
-                right: -8px;
+                right: -9px;
             }
         }
         .box1{

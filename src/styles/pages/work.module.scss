@@ -3,10 +3,8 @@
 .section{
     position: relative;
     padding: 180px 0;
+    background: #fff;
     z-index: 1;
-    &.section2{
-        background: #fff;
-    }
 }
 .filter{
     display: grid;

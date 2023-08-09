@@ -170,7 +170,7 @@ export default function Work(){
             exit={{ opacity: 0 }}
         >
             <Visual text={visualText} />
-            <section className={`${styles.section} ${styles.section2}`}>
+            <section className={styles.section}>
                 <motion.div 
                     className="inner"
                     initial={{ opacity: 0 }}
@@ -187,7 +187,7 @@ export default function Work(){
                         filters.map((item, i) => (
                             <motion.button 
                                 key={i}
-                                // className={active === item && styles.active}
+                                className={active === item ? styles.active : ""}
                                 onClick={() => filterHandler(item)}
                                 whileHover={{ 
                                     scale: 1.1,
