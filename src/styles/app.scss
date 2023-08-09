@@ -8,11 +8,6 @@
 .inner{
     @include desktop-inner;
 }
-.section-title{
-    margin: 0 0 100px 0;
-    font-size: 40px;
-    font-weight: 700;
-}
 
 @include tablet{
     .inner{

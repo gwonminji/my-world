@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import Visual from '@components/Visual';
 import Marquee from '@components/Marquee';
+import Title from '@components/Title';
 
 import styles from "@styles/pages/about.module.scss";
 
@@ -21,7 +22,8 @@ export default function About(){
             </section>
             <section className={`${styles.section} ${styles.section2}`}>
                 <div className="inner">
-                    <h1 className="section-title">title</h1>
+                    {/* <h1 className="section-title">title</h1> */}
+                    <Title title="title1" />
                     <div className={styles["i-think"]}>
                         <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
                         <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
@@ -61,7 +63,8 @@ export default function About(){
             </section>
             <section className={`${styles.section} ${styles.section3}`}>
                 <div className="inner">
-                    <h1 className="section-title">title</h1>
+                    {/* <h1 className="section-title">title</h1> */}
+                    <Title title="title2" />
                     <ul className={styles.history}>
                         <li>
                             <span>11111</span>

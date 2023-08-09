@@ -6,6 +6,7 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 import Visual from '@components/Visual';
 import Marquee from '@components/Marquee';
 import Modal from '@components/Modal';
+import Title from '@components/Title';
 
 import data from '@stores/workList';
 
@@ -184,7 +185,8 @@ export default function Work(){
                         }
                     }}
                 >
-                    <h1 className="section-title">title</h1>
+                    {/* <h1 className="section-title">title</h1> */}
+                    <Title title="title2" />
                     <div className={styles.filter}>
                     {
                         filters.map((item, i) => (
