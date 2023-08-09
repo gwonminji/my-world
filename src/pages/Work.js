@@ -207,7 +207,7 @@ export default function Work(){
                     }
                     </div>
                     <ResponsiveMasonry
-                        columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+                        columnsCountBreakPoints={{350: 1, 767: 2, 1023: 3}}
                     >
                         <Masonry className={styles.list}>
                             {/* <AnimatePresence> */}
