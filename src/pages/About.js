@@ -15,14 +15,9 @@ export default function About(){
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <section className={`${styles.section} ${styles.section1}`}>
-                <div className="inner">
-                    <Visual text={visualText} />
-                </div>
-            </section>
+            <Visual text={visualText} />
             <section className={`${styles.section} ${styles.section2}`}>
                 <div className="inner">
-                    {/* <h1 className="section-title">title</h1> */}
                     <Title title="title1" />
                     <div className={styles["i-think"]}>
                         <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
@@ -63,7 +58,6 @@ export default function About(){
             </section>
             <section className={`${styles.section} ${styles.section3}`}>
                 <div className="inner">
-                    {/* <h1 className="section-title">title</h1> */}
                     <Title title="title2" />
                     <ul className={styles.history}>
                         <li>
@@ -97,9 +91,6 @@ export default function About(){
                     </ul>
                 </div>
             </section>
-            {/* <section className={`${styles.section} ${styles.section4}`}>
-                <Marquee />
-            </section> */}
             <Marquee />
         </motion.main>
     )

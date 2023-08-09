@@ -1,4 +1,11 @@
 @import "@styles/helpers/global";
+.visual-wrap{
+    position: relative;
+    height: 100vh;
+    background: $color-dark-navy;
+    overflow: hidden;
+    z-index: 1;
+}
 .visual{
     height: 100vh;
     display: flex;

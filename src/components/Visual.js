@@ -40,27 +40,31 @@ export default function Visual(props){
         }
     }
     return(
-        <div className={styles.visual}>
-            {/* {props.text} */}
-            {/* {
-                props.text.map((e, i) => console.log(`${i} : ${e}`))
-            } */}
-            <motion.h1 
-                className={styles["visual-title"]}
-                variants={visualAnim} 
-                initial="start"
-                animate="end"
-            >
-                {
-                    props.text.map((text, i) =>          
-                    <motion.span
-                        key={i}
-                        variants={i % 2 === 0 ? visualTextLeftAnim : visualTextRightAnim}
-                    >{text}
-                    </motion.span>
-                    )
-                }
-            </motion.h1>
-        </div>
+        <section className={styles["visual-wrap"]}>
+            <div className="inner">
+                <div className={styles.visual}>
+                    {/* {props.text} */}
+                    {/* {
+                        props.text.map((e, i) => console.log(`${i} : ${e}`))
+                    } */}
+                    <motion.h1 
+                        className={styles["visual-title"]}
+                        variants={visualAnim} 
+                        initial="start"
+                        animate="end"
+                    >
+                        {
+                            props.text.map((text, i) =>          
+                            <motion.span
+                                key={i}
+                                variants={i % 2 === 0 ? visualTextLeftAnim : visualTextRightAnim}
+                            >{text}
+                            </motion.span>
+                            )
+                        }
+                    </motion.h1>
+                </div>
+            </div>
+        </section>
     )
 }

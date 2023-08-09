@@ -169,11 +169,7 @@ export default function Work(){
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <section className={`${styles.section} ${styles.section1}`}>
-                <div className="inner">
-                    <Visual text={visualText} />
-                </div>
-            </section>
+            <Visual text={visualText} />
             <section className={`${styles.section} ${styles.section2}`}>
                 <motion.div 
                     className="inner"
@@ -185,7 +181,6 @@ export default function Work(){
                         }
                     }}
                 >
-                    {/* <h1 className="section-title">title</h1> */}
                     <Title title="title2" />
                     <div className={styles.filter}>
                     {

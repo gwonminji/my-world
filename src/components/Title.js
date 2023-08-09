@@ -7,14 +7,14 @@ import styles from "@styles/components/title.module.scss"
 export default function Title(props){
     const textAnim = {
         initial: { 
-            y: "50%", 
+            y: "80%", 
             opacity: 0 
         },
         whileInView: {
             y: 0,
             opacity: 1,
             transition: {
-                duration: 0.8
+                duration: 0.6
             }
         }
     }
