@@ -17,56 +17,6 @@ export default function About(){
     const [skillData, setSkillData] = useState([]);
     const [historyData, setHistoryData] = useState([]);
 
-    // const skill = [
-    //     {
-    //         id: 1,
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     },
-    //     {
-    //         id: 2,
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     },
-    //     {
-    //         id: 3,
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     },
-    //     {
-    //         id: 4,
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     }
-    // ]
-
-    // const history = [
-    //     {
-    //         id: 1,
-    //         year: "0000",
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     },
-    //     {
-    //         id: 2,
-    //         year: "0000",
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     },
-    //     {
-    //         id: 3,
-    //         year: "0000",
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     },
-    //     {
-    //         id: 4,
-    //         year: "0000",
-    //         title: "Lorem Ipsum title",
-    //         text: "Lorem Ipsum text"
-    //     }
-    // ]
-
     useEffect(() => {
         setSkillData(skill.items);
         setHistoryData(history.items);
@@ -135,24 +85,25 @@ export default function About(){
                 <div className="inner" >
                     <Title title="title1" />
                     <motion.div 
+                        className={styles["i-think"]}
                         variants={textAnim}
                         initial="initial"
                         whileInView="whileInView"
-                        className={styles["i-think"]}
                     >
                         <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
                         <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
                         <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
                     </motion.div>
                     <motion.ul
+                        className={styles.skill}
                         variants={parentAnim}
                         initial="initial"
                         whileInView="whileInView" 
-                        className={styles.skill}
                     >
                         {
                             skillData.map((item, i) => 
                             <motion.li
+                                key={i}
                                 variants={skillAnim}
                             >
                                 <strong>{item.title}</strong>
@@ -167,14 +118,15 @@ export default function About(){
                 <div className="inner">
                     <Title title="title2" />
                     <motion.ul
+                        className={styles.history}
                         variants={parentAnim}
                         initial="initial"
                         whileInView="whileInView" 
-                        className={styles.history}
                     >
                         {
                             historyData.map((item, i) => 
                             <motion.li
+                                key={i}
                                 variants={historyAnim}
                             >
                                 <span>{item.year}</span>

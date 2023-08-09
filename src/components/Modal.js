@@ -25,25 +25,30 @@ export default function Modal(props){
         // }, 400);
     }, [])
 
+    const fade = {
+        initial: {
+            scale: 0.8,
+            opacity: 0
+        },
+        animate: {
+            scale: 1,
+            opacity: 1
+        }
+    }
+
     return(
         <AnimatePresence>
             <motion.div 
                 className={styles.modal}
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ 
-                    scale: 1,
-                    opacity: 1,
-                    transition: {
-                        // type: "spring", 
-                        // stiffness: 400, 
-                        // damping: 10
-                    }
-                }}
+                variants={fade}
+                initial="initial"
+                animate="animate"
             >
                 <div className={styles.dimmed}></div>
                 <div className={styles.content}>
                     <div className={styles.head}>
-                        <button type="button" 
+                        <button 
+                            type="button" 
                             className={styles.close}
                             onClick={(e) => props.modalHandler(e)} 
                             title="닫기"
@@ -51,25 +56,26 @@ export default function Modal(props){
                             닫기
                         </button>
                     </div>
-                    <div className={styles.body}>
-                        {
-                            list.map((item, i) => (
-                                <>
-                                    <div className={styles["img-box"]}>
-                                        <img src={item.img} alt={item.title} />
+                    {
+                        list.map((item, i) => (
+                            <div
+                                key={i} 
+                                className={styles.body}
+                            >
+                                <div className={styles["img-box"]}>
+                                    <img src={item.img} alt={item.title} />
+                                </div>
+                                <div className={styles["text-box"]}>
+                                    <div>
+                                        <span className={styles.year}>{item.year}</span>
+                                        <span className={styles.cate}>{item.cate}</span>
                                     </div>
-                                    <div className={styles["text-box"]}>
-                                        <div>
-                                            <span className={styles.year}>{item.year}</span>
-                                            <span className={styles.cate}>{item.cate}</span>
-                                        </div>
-                                        <strong>{item.title}</strong>
-                                        <p>{item.text}</p>
-                                    </div>
-                                </>
-                            ))
-                        }
-                    </div>
+                                    <strong>{item.title}</strong>
+                                    <p>{item.text}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </motion.div>
         </AnimatePresence>

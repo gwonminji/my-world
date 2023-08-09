@@ -211,7 +211,7 @@ export default function Work(){
                                 {
                                     displayData.map((item, i) => (
                                         <motion.div
-                                            key={item.id}
+                                            key={i}
                                             // layout
                                             // initial={{ transform: "scale(0)" }}
                                             // animate={{ transform: "scale(1)" }}

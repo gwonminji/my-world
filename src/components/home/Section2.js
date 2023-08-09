@@ -30,10 +30,13 @@ const ContentLine = ({ content }) => {
     const clipPathVal = useMotionTemplate`inset(0% ${scrollValue} 0% 0%)`;
 
     return (
-        <span className={styles['text-container']} ref={contentRef}>
+        <span 
+            className={styles['text-container']} 
+            ref={contentRef}
+        >
             <motion.span
-                style={{ clipPath: clipPathVal }}
                 className={styles['highlighted-text']}
+                style={{ clipPath: clipPathVal }}
                 data-text={content}
             />
             <span className={styles['static-text']}>{content}</span>
@@ -42,14 +45,18 @@ const ContentLine = ({ content }) => {
 }
 export default function Section2(){
     return(
-        <div className={styles.outer}>
-            <div className={styles.inner}>
-                <p>
-                    {content.map((item) => (
-                        <ContentLine key={item} content={item} />
-                    ))}
-                </p>
+        <section className={styles.section}>
+            <div className="inner">
+                <div className={styles.outer}>
+                    <div className={styles.inner}>
+                        <p>
+                            {content.map((item) => (
+                                <ContentLine key={item} content={item} />
+                            ))}
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     )
 }

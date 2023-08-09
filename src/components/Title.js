@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
-
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import styles from "@styles/components/title.module.scss"
 
@@ -21,10 +19,10 @@ export default function Title(props){
 
     return(
         <motion.h1
+            className={styles.title}
             variants={ textAnim }
             initial="initial"
             whileInView="whileInView"
-            className={styles.title}
         >
             {props.title}
         </motion.h1>
