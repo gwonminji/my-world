@@ -41,10 +41,10 @@ export default function Visual(props){
     }
     return(
         <div className={styles.visual}>
-            {props.text}
-            {
+            {/* {props.text} */}
+            {/* {
                 props.text.map((e, i) => console.log(`${i} : ${e}`))
-            }
+            } */}
             <motion.h1 
                 className={styles["visual-title"]}
                 variants={visualAnim} 

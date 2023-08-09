@@ -33,6 +33,54 @@
     padding: 0 20px;
 }
 .body{
+    padding: 20px;
+    display: flex;
+}
+.img-box{
+    flex: 1;
+    max-height: 50vh;
+    img{
+        @include img-center-crop;
+    }
+}
+.text-box{
     padding: 0 20px;
+    flex: 1;
+    div{
+        margin: 0 0 40px 0;
+        display: flex;
+    }
+    span{
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
+    strong{
+        display: block;
+        margin: 0 0 60px 0;
+        font-size: 40px;
+        color: $color-dark-gray;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+    p{
+        font-size: 20px;
+        color: $color-dark-gray;
+        line-height: 1.5;
+    }
+}
+.year{
+    padding: 0 16px;
+    height: 30px;
+    font-size: 18px;
+    color: $color-dark-gray;;
+    line-height: 28px;
+    border: 1px solid $color-dark-gray;
+    border-radius: 30px;
+}
+.cate{
+    height: 30px;
+    font-size: 18px;
+    color: $color-dark-gray;
+    line-height: 28px;
 }
 

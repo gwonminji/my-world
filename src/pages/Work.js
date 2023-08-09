@@ -134,7 +134,7 @@ export default function Work(){
     const [displayData, setDisplayData] = useState(data.items);
     const [active, setActive] = useState("all");
 
-    const handleClick = (cate) => {
+    const filterHandler = (cate) => {
         if(cate === active) return;
         setActive(cate);
         setDisplayData([]);
@@ -157,11 +157,8 @@ export default function Work(){
     const [idx, setIdx] = useState(null);
 
     const modalHandler = (e) => {
-        // e.target.id = idx;
-        // console.log(e.target.id);
-        // setIdx(e.target.idx);
         setModalOpen(!modalOpen);
-        // setIdx(idx)
+        setIdx(e.target.id);
     }
 
     return(
@@ -194,7 +191,7 @@ export default function Work(){
                             <motion.button 
                                 key={i}
                                 // className={active === item && styles.active}
-                                onClick={() => handleClick(item)}
+                                onClick={() => filterHandler(item)}
                                 whileHover={{ 
                                     scale: 1.1,
                                     transition: {
@@ -219,10 +216,14 @@ export default function Work(){
                                         <motion.div
                                             key={item.id}
                                             // layout
-                                            initial={{ transform: "scale(0)" }}
-                                            animate={{ transform: "scale(1)" }}
+                                            // initial={{ transform: "scale(0)" }}
+                                            // animate={{ transform: "scale(1)" }}
+                                            // viewport={{ once: true }}
+                                            // exit={{ transform: "scale(0)" }}
+                                            initial={{ scale: 0 }}
+                                            animate={{ scale: 1 }}
                                             viewport={{ once: true }}
-                                            exit={{ transform: "scale(0)" }}
+                                            exit={{ transform: { scale: 0 } }}
                                             className={styles["list-item"]}
                                         >
                                             <div className={styles["img-box"]}>
@@ -243,6 +244,7 @@ export default function Work(){
                                             >
                                                 <strong>{item.title}</strong>
                                                 <motion.button
+                                                    id={item.id}
                                                     whileHover={{ 
                                                         scale: 1.1,
                                                         transition: {
@@ -251,7 +253,6 @@ export default function Work(){
                                                     }}
                                                     onClick={modalHandler}
                                                     title="more"
-                                                    id={item.id}
                                                 >more
                                                 </motion.button>
                                             </motion.div>
@@ -265,7 +266,7 @@ export default function Work(){
             </section>
             <Marquee />
             {
-                modalOpen && <Modal modalHandler={modalHandler} />
+                modalOpen && <Modal modalHandler={modalHandler} idx={idx}/>
             }
         </motion.main>
     )
