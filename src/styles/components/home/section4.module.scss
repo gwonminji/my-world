@@ -53,13 +53,15 @@
 
 }
 .title1{
-    font-size: 60px;
+    font-size: 56px;
+    color: $color-dark-navy;
+    font-weight: 700;
     margin: 200px 0 100px 0;
 }
-.title2{
-    font-size: 40px;
-    margin: 0 0 100px 0;
-}
+// .title2{
+//     font-size: 40px;
+//     margin: 0 0 100px 0;
+// }
 .box{
     padding: 40px;
     margin: 0 auto 100px;
@@ -67,4 +69,28 @@
     height: 300px;
     @include card-box-shadow;
     border-radius: 12px;
+}
+
+@include tablet{
+    .section{
+        padding: 80px 0;
+    }
+    .title1{
+        font-size: 48px;
+        margin: 180px 0 80px 0;
+    }
+}
+
+@include mobile{
+    .section{
+        padding: 40px 0;
+    }
+    .title1{
+        font-size: 32px;
+        margin: 100px 0 60px 0;
+    }
+    .box{
+        margin: 0 auto 40px;
+        width: 100%;
+    }
 }

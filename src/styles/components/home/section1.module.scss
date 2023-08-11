@@ -1,5 +1,6 @@
 @import "@styles/helpers/global";
 .section{
+    position: relative;
     height: 100vh;
     background: $color-dark-navy;
     z-index: 1;
@@ -41,10 +42,24 @@
     .inner{
         @include tablet-inner;
     }
+    .title{
+        font-size: 18vw;
+        line-height: 1.5;
+    }
+    .scroll{
+        font-size: 16px;
+    }
 }
 
 @include mobile{
     .inner{
         @include mobile-inner;
+        // padding: 0 60px;
+    }
+    .title{
+        font-size: 16vw;
+    }
+    .scroll{
+        font-size: 14px;
     }
 }

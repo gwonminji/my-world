@@ -6,7 +6,30 @@ import data from '@stores/workList';
 
 import styles from "@styles/components/home/section3.module.scss";
 
-export default function Section3(){    
+export default function Section3(){
+    const textAnim = {
+        initial: {
+            opacity: 0
+        },
+        whileInView: {
+            opacity: 1,
+            transition: {
+                duration: 1
+            } 
+        }
+    }
+    
+    const Hover = {
+        initial: {
+            left: -10
+        },
+        whileHover: {
+            left: 0
+        },
+        whileTap: {
+            scale: 0.9,
+        }
+    }
     const ref = useRef(null);
 
     const { scrollYProgress } = useScroll({
@@ -28,8 +51,24 @@ export default function Section3(){
                 ref={ref}
             >
                 <div className={styles["sticky-box"]}>
-                    <h1>스티키1</h1>
-                    <h2>스티키2</h2>
+                    <motion.h1
+                        variants={textAnim}
+                        initial="initial"
+                        whileInView="whileInView"
+                    >
+                        스티키 영역
+                    </motion.h1>
+                    <motion.a 
+                        href="/work" 
+                        className={styles.link}
+                        variants={Hover}
+                        initial="initial"
+                        whileHover="whileHover"
+                        whileTap="whileTap" 
+                        title="More"
+                    >
+                        More
+                    </motion.a>
                 </div>
                 <div className={styles["list-box"]}>
                     <motion.div className={styles.bg} style={{ scaleX: scrollYProgress }}></motion.div>

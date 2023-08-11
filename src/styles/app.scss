@@ -19,6 +19,9 @@
 }
 
 @include mobile{
+    .wrap{
+        padding: 0 0 160px 0;
+    }
     .inner{
         @include mobile-inner;
     }
