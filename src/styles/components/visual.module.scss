@@ -23,3 +23,16 @@
         }
     }
 }
+
+@include tablet{
+    .visual-title{
+        font-size: 14vw;
+        line-height: 1.5;
+    }
+}
+
+@include mobile{
+    .visual-title{
+        font-size: 20vw;
+    }
+}

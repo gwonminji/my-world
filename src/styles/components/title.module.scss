@@ -2,7 +2,7 @@
 
 .title{
     margin: 0 0 100px 0;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
 }
 
@@ -11,5 +11,8 @@
 }
 
 @include mobile{
-    
+    .title{
+        margin: 0 0 60px 0;
+        font-size: 40px;
+    }
 }
