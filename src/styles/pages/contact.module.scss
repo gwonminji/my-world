@@ -66,6 +66,7 @@
 .input-text{
     flex: 1;
     padding: 0 10px;
+    width: calc(100% - 80px);
     height: 40px;
     border: 0;
     border-bottom: 1px solid $color-light-navy;
@@ -105,5 +106,55 @@
     cursor: pointer;
     span{
         display: block;
+    }
+}
+
+@include tablet{
+    .section{
+        &.section2{
+            padding: 100px 0;
+        }
+    }
+    .visual{
+        h1{
+            font-size: 12vw;
+        }
+    }
+    .cursor{
+        height: 12vw;
+    }
+}
+
+@include mobile{
+    .visual{
+        &-text{
+            min-width: 14px;
+        }
+    }
+    .form-wrap{
+        width: 100%;
+    }
+    .form{
+        padding: 40px 20px;
+        &-row{
+            margin: 0 0 16px 0;
+        }
+    }
+    .label{
+        width: 60px;
+        font-size: 16px;
+    }
+    .input-text{
+        width: calc(100% - 60px);
+        font-size: 16px;
+    }
+    .textarea{
+        margin: 0 0 16px 0;
+        font-size: 16px;
+    }
+    .submit{
+        height: 50px;
+        font-size: 18px;
+        line-height: 48px;
     }
 }
