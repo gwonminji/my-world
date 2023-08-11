@@ -60,9 +60,9 @@
     strong{
         display: block;
         font-size: 32px;
-        color: #333;
+        color: $color-dark-gray;
         font-weight: 600;
-        font-weight: $color-dark-gray;
+        text-align: center;
     }
     button{
         padding: 0 12px;
@@ -75,5 +75,28 @@
         border: 1px solid $color-navy;
         border-radius: 40px;
         cursor: pointer;
+    }
+}
+
+@include tablet{
+    .section{
+        padding: 100px 0;
+    }
+}
+
+@include mobile{
+    .filter{
+        grid-template-columns: repeat(2, 140px);
+        grid-gap: 10px;
+        button{
+            font-size: 18px;
+        }
+    }
+    .list{
+        margin: 20px auto 0;
+        max-width: 400px;
+        &-item{
+            margin: 10px 0;
+        }
     }
 }
