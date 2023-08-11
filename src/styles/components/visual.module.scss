@@ -25,6 +25,12 @@
 }
 
 @include tablet{
+    .visual-wrap{
+        height: $mobileInnerHeight;
+    }
+    .visual{
+        height: $mobileInnerHeight;
+    }
     .visual-title{
         font-size: 14vw;
         line-height: 1.5;

@@ -110,7 +110,13 @@
 }
 
 @include tablet{
+    .contact{
+        min-height: $mobileInnerHeight;
+    }
     .section{
+        &.section1{
+            min-height: $mobileInnerHeight;
+        }
         &.section2{
             padding: 100px 0;
         }

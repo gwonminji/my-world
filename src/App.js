@@ -35,6 +35,15 @@ const GlobalStyles = createGlobalStyle`
       font-family: 'Pretendard', sans-serif;
   }
 `;
+
+//모바일에서 브라우저 주소창, 하단 버튼영역을 고려한 전체높이 설정
+let vh = window.innerHeight * 0.01 //innerHeight : 실질적으로 브라우저에서 보이는 높이
+
+document.documentElement.style.setProperty('--vh', `${vh}px`)
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+})
 function App() {
   return (
     <div className="wrap">

@@ -51,6 +51,14 @@
     }
 }
 
+@include tablet{
+    .section{
+        height: $mobileInnerHeight;
+    }
+    .visual{
+        min-height: calc(#{$mobileInnerHeight} - 100px);
+    }
+}
 @include mobile{
     .inner{
         @include mobile-inner;
