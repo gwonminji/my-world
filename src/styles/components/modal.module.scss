@@ -21,16 +21,21 @@
 }
 .content{
     width: 1000px;
+    max-height: 60vh;
     @include card-box-shadow;
     border-radius: 20px;
+    overflow-y: auto;
     z-index: 9999;
 }
 .head{
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 40px;
-    padding: 0 20px;
+    background: #fff;
 }
 .body{
     padding: 20px;
@@ -38,7 +43,7 @@
 }
 .img-box{
     flex: 1;
-    max-height: 50vh;
+    // max-height: 50vh;
     img{
         @include img-center-crop;
     }
@@ -81,6 +86,41 @@
     height: 30px;
     font-size: 18px;
     color: $color-dark-gray;
-    line-height: 28px;
+    line-height: 30px;
 }
 
+@include tablet{
+    .modal{
+        padding: 0 40px;
+    }
+    .body{
+        flex-direction: column;
+    }
+    .text-box{
+        div{
+            margin: 0 0 30px 0;
+        }
+        span{
+            margin: 0 16px 0 0;
+        }
+        strong{
+            margin: 0 0 40px 0;
+            font-size: 32px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .year{
+        font-size: 16px;
+    }
+    .cate{
+        font-size: 16px;
+    }
+}
+
+@include mobile{
+    .modal{
+        padding: 0 20px;
+    }
+}
