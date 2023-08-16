@@ -13,7 +13,7 @@
     height: 100%;
 }
 .visual{
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 163px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,10 +29,21 @@
 }
 .scroll{
     padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     color: #fff;
     text-align: center;
     letter-spacing: 6px;
+    &>span{
+        display: inline-block;
+        margin: 0 16px 0 0;
+    }
+    &>div{
+        display: inline-block;
+        max-width: 32px;
+    }
 }
 .bounce{
     display: inline-block;
@@ -56,7 +67,7 @@
         height: $mobileInnerHeight;
     }
     .visual{
-        min-height: calc(#{$mobileInnerHeight} - 100px);
+        min-height: calc(#{$mobileInnerHeight} - 163px);
     }
 }
 @include mobile{

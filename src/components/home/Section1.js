@@ -2,6 +2,9 @@ import { useRef } from "react";
 
 import { motion, useScroll } from "framer-motion";
 
+import Lottie from "lottie-react";
+import scrollLottie from "@assets/lottie/scroll.json";
+
 import styles from "@styles/components/home/section1.module.scss";
 
 export default function Section1(){
@@ -87,15 +90,16 @@ export default function Section1(){
                     className={styles.scroll}
                     style={{ opacity: scrollYProgress }}
                 >
-                    Scroll Down
-                    <motion.span
+                    <span>Scroll Down</span>                    
+                    {/* <motion.span
                         className={styles.bounce}
                         variants={bounce}
                         initial="initial"
                         animate="animate"
                     >
                     ️❤️
-                    </motion.span>
+                    </motion.span> */}
+                    <Lottie animationData={scrollLottie} />
                 </motion.div>
             </div>
         </section>
