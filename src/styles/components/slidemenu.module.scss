@@ -82,10 +82,19 @@
     }
     &__link{
         padding: 16px 0;
-        display: block;
+        display: flex;
+        align-items: center;
         font-size: 56px;
         color: #fff;
         font-weight: 600;
+        svg{
+            min-width: 56px;
+            font-size: 48px;
+        }
+        span{
+            display: inline-block;
+            margin: 0 0 0 16px;
+        }
     }
 }
 // .menu{
@@ -104,6 +113,10 @@
     .gnb{
         &__link{
             font-size: 48px;
+            svg{
+                min-width: 52px;
+                font-size: 40px;
+            }
         }
     }
 }
@@ -126,6 +139,13 @@
     .gnb{
         &__link{
             font-size: 32px;
+            svg{
+                min-width: 48px;
+                font-size: 32px;
+            }
+            span{
+                margin: 0 0 0 8px;
+            }
         }
     }
 }

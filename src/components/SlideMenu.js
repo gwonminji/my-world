@@ -2,6 +2,10 @@
 
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faHouse, faUser, faBarsStaggered, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
 import styles from "@styles/components/slidemenu.module.scss"
 
 const links = [
@@ -9,10 +13,10 @@ const links = [
     // { id: 2, name: "about", to: "/about" },
     // { id: 3, name: "work", to: "/work" },
     // { id: 4, name: "contact", to: "/contact" },
-    { id: 1, name: "first", to: "/" },
-    { id: 2, name: "second", to: "/about" },
-    { id: 3, name: "third", to: "/work" },
-    { id: 4, name: "fourth", to: "/contact" },
+    { id: 1, name: "first", to: "/", icon: faHouse },
+    { id: 2, name: "second", to: "/about", icon: faUser },
+    { id: 3, name: "third", to: "/work", icon: faBarsStaggered },
+    { id: 4, name: "fourth", to: "/contact", icon: faEnvelope },
 ];
 
 const itemVariants = {
@@ -63,7 +67,7 @@ export default function SlideMenu(){
                                 exit="closed"
                                 variants={sideVariants}
                             >
-                            {links.map(({ name, to, id }) => (
+                            {links.map(({ name, to, id, icon }) => (
                                 <motion.a
                                     key={id}
                                     href={to}
@@ -71,7 +75,8 @@ export default function SlideMenu(){
                                     whileHover={{ scale: 1.1 }}
                                     variants={itemVariants}
                                 >
-                                {name}
+                                    <FontAwesomeIcon icon={icon} />
+                                    <span>{name}</span>
                                 </motion.a>
                                 // <Link 
                                 //     to={to}
