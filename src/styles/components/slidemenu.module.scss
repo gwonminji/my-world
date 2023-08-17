@@ -81,7 +81,7 @@
 
     }
     &__link{
-        padding: 16px 0;
+        padding: 24px 0;
         display: flex;
         align-items: center;
         font-size: 56px;
@@ -138,6 +138,7 @@
     }
     .gnb{
         &__link{
+            padding: 16px 0;
             font-size: 32px;
             svg{
                 min-width: 48px;

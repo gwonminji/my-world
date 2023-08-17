@@ -1,10 +1,11 @@
 // import { Link } from "react-router-dom";
+import { useEffect } from 'react';
 
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faHouse, faUser, faBarsStaggered, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faHouse, faIdCard, faList, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import styles from "@styles/components/slidemenu.module.scss"
 
@@ -14,8 +15,8 @@ const links = [
     // { id: 3, name: "work", to: "/work" },
     // { id: 4, name: "contact", to: "/contact" },
     { id: 1, name: "first", to: "/", icon: faHouse },
-    { id: 2, name: "second", to: "/about", icon: faUser },
-    { id: 3, name: "third", to: "/work", icon: faBarsStaggered },
+    { id: 2, name: "second", to: "/about", icon: faIdCard },
+    { id: 3, name: "third", to: "/work", icon: faList },
     { id: 4, name: "fourth", to: "/contact", icon: faEnvelope },
 ];
 
@@ -43,6 +44,15 @@ const sideVariants = {
 }
 export default function SlideMenu(){
     const [open, cycleOpen] = useCycle(false, true);
+
+    useEffect(() => {
+        if(open){
+            document.body.classList.add("hidden")
+        }else{
+            document.body.classList.remove("hidden")
+        }
+    }, [open])
+    
     return(
         <aside>
             <AnimatePresence>
@@ -53,7 +63,7 @@ export default function SlideMenu(){
                             className={styles.gnb}
                             initial={{ width: 0 }}
                             animate={{
-                                width: "80vw"
+                                width: "85vw"
                             }}
                             exit={{
                                 width: 0,
