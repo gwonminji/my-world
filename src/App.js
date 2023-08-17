@@ -9,6 +9,7 @@ import SlideMenu from "@components/SlideMenu";
 import Home from "@pages/Home";
 import About from "@pages/About";
 import Work from "@pages/Work";
+import Detail from "@pages/Detail";
 import Contact from "@pages/Contact";
 
 import { createGlobalStyle } from "styled-components";
@@ -57,6 +58,7 @@ function App() {
             <Route path="/" element={<Home />}/>
             <Route path="/about" element={<About />}/>
             <Route path="/work" element={<Work />}/>
+            <Route path="/work/:id" element={<Detail />}/>
             <Route path="/contact" element={<Contact />}/>
           </Routes>
         </AnimatePresence>

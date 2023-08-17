@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { motion, AnimatePresence } from "framer-motion";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
@@ -164,7 +165,6 @@ export default function Work(){
 
     return(
         <motion.main 
-            className={styles.about}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -240,7 +240,7 @@ export default function Work(){
                                                 }}
                                             >
                                                 <strong>{item.title}</strong>
-                                                <motion.button
+                                                {/* <motion.button
                                                     id={item.id}
                                                     whileHover={{ 
                                                         scale: 1.1,
@@ -251,7 +251,30 @@ export default function Work(){
                                                     onClick={modalHandler}
                                                     title="more"
                                                 >more
-                                                </motion.button>
+                                                </motion.button> */}
+                                                <Link
+                                                    // to={{
+                                                    //     pathname: `/work/${item.id}`,
+                                                    //     state: {
+                                                    //         data: item
+                                                    //     }
+                                                    // }}
+                                                    to={`/work/${item.id}`}
+                                                    state={{data: item}}
+                                                    title="more"
+                                                >
+                                                    <motion.span
+                                                        whileHover={{ 
+                                                            scale: 1.1,
+                                                            transition: {
+                                                                duration: 0.25
+                                                            } 
+                                                        }}
+                                                        onClick={modalHandler}
+                                                    >
+                                                        more
+                                                    </motion.span>
+                                                </Link>
                                             </motion.div>
                                         </motion.div>
                                     ))
