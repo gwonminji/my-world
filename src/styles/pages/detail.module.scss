@@ -20,14 +20,21 @@
 .text-box{
     padding: 180px 120px;
     width: 50%;
+    background: $color-light-navy;;
 }
 .year{
+    margin: 0 0 80px 0;
     font-size: 5vw;
-    color: $color-light-navy;
+    // color: $color-light-navy;
+    color: #fff;
     font-weight: 900;
-    opacity: 0.4;
+    text-align: right;
+    opacity: 0.5;
+    transform: rotate(10deg);
 }
 .cate{
+    margin: 0 0 16px 0;
+    display: inline-block;
     height: 30px;
     font-size: 18px;
     color: $color-dark-gray;
@@ -35,11 +42,12 @@
 }
 .title{
     display: block;
-    margin: 0 0 60px 0;
+    margin: 0 0 72px 0;
     font-size: 40px;
     color: $color-dark-gray;
     line-height: 1.25;
     font-weight: 600;
+    transform: rotate(-4deg);
 }
 .text{
     font-size: 20px;
