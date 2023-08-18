@@ -51,7 +51,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 2px;
-        background: $color-dark-navy;
+        background: $color-navy;
         z-index: 1;
     }
     li{
@@ -70,7 +70,7 @@
             width: 12px;
             height: 12px;
             background: #fff;
-            border: 2px solid $color-dark-navy;
+            border: 2px solid $color-navy;
             border-radius: 100%;
         }
         &:not(:first-child){

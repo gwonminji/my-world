@@ -29,6 +29,7 @@ export default function Marquee(){
                     >
                         <h1>
                             ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
+                            {/* Let's create something together. Drop me a line! */}
                         </h1>
                     </motion.div>
                 </div>
