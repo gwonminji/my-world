@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 
 import { AnimatePresence, motion, useCycle } from "framer-motion";
@@ -46,6 +46,7 @@ export default function SlideMenu(){
     const [open, cycleOpen] = useCycle(false, true);
 
     useEffect(() => {
+        
         if(open){
             document.body.classList.add("hidden")
         }else{
@@ -67,7 +68,7 @@ export default function SlideMenu(){
                             }}
                             exit={{
                                 width: 0,
-                                transition: { delay: 0.7, duration: 0.3 }
+                                transition: { delay: 0.1, duration: 0.2 }
                             }}
                         >
                             <motion.div
@@ -78,25 +79,33 @@ export default function SlideMenu(){
                                 variants={sideVariants}
                             >
                             {links.map(({ name, to, id, icon }) => (
-                                <motion.a
-                                    key={id}
-                                    href={to}
-                                    className={styles["gnb__link"]}
-                                    whileHover={{ scale: 1.1 }}
-                                    variants={itemVariants}
-                                >
-                                    <FontAwesomeIcon icon={icon} />
-                                    <span>{name}</span>
-                                </motion.a>
-                                // <Link 
-                                //     to={to}
+                                // <motion.a
                                 //     key={id}
+                                //     href={to}
                                 //     className={styles["gnb__link"]}
                                 //     whileHover={{ scale: 1.1 }}
                                 //     variants={itemVariants}
                                 // >
-                                // {name}
-                                // </Link>
+                                //     <FontAwesomeIcon icon={icon} />
+                                //     <span>{name}</span>
+                                // </motion.a>
+                                <Link 
+                                    to={to}
+                                    key={id}
+                                    className={styles["gnb__link"]}
+                                    // whileHover={{ scale: 1.1 }}
+                                    // variants={itemVariants}
+                                    // onClick={cycleOpen}
+                                >
+                                    <motion.span
+                                        whileHover={{ scale: 1.1 }}
+                                        variants={itemVariants}
+                                        onClick={cycleOpen}
+                                    >
+                                        <FontAwesomeIcon icon={icon} />
+                                        {name}
+                                    </motion.span>
+                                </Link>
                             ))}
                             </motion.div>
                         </motion.div>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -14,7 +14,7 @@ import Contact from "@pages/Contact";
 
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import "@styles/app.scss"
+import "@styles/app.scss";
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -51,18 +51,16 @@ function App() {
       <GlobalStyles />
       <Header />
       <SlideMenu />
-      <BrowserRouter>
-        {/* <SlideMenu /> */}
-        <AnimatePresence>
-          <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/about" element={<About />}/>
-            <Route path="/work" element={<Work />}/>
-            <Route path="/work/:id" element={<Detail />}/>
-            <Route path="/contact" element={<Contact />}/>
-          </Routes>
-        </AnimatePresence>
-      </BrowserRouter>
+      {/* <SlideMenu /> */}
+      <AnimatePresence>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/work" element={<Work />}/>
+          <Route path="/work/:id" element={<Detail />}/>
+          <Route path="/contact" element={<Contact />}/>
+        </Routes>
+      </AnimatePresence>
       <Footer />
     </div>
   );

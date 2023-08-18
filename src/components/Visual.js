@@ -15,7 +15,7 @@ export default function Visual(props){
     }
     const visualTextLeftAnim = {
         start: {
-            x: "-50%",
+            x: "-100%",
             opacity: 0
         },
         end: {
@@ -28,7 +28,7 @@ export default function Visual(props){
     }
     const visualTextRightAnim = {
         start: {
-            x: "50%",
+            x: "100%",
             opacity: 0
         },
         end: {

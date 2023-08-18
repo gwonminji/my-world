@@ -88,12 +88,12 @@
         color: #fff;
         font-weight: 600;
         svg{
+            margin: 0 16px 0 0;
             min-width: 56px;
             font-size: 48px;
         }
         span{
             display: inline-block;
-            margin: 0 0 0 16px;
         }
     }
 }
@@ -141,11 +141,9 @@
             padding: 16px 0;
             font-size: 32px;
             svg{
+                margin: 0 8px 0 0;
                 min-width: 48px;
                 font-size: 32px;
-            }
-            span{
-                margin: 0 0 0 8px;
             }
         }
     }
