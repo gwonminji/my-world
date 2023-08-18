@@ -31,7 +31,7 @@ const itemVariants = {
 const sideVariants = {
     closed: {
         transition: {
-            staggerChildren: 0.2,
+            staggerChildren: 0,
             staggerDirection: -1
         }
     },
@@ -68,7 +68,7 @@ export default function SlideMenu(){
                             }}
                             exit={{
                                 width: 0,
-                                transition: { delay: 0.1, duration: 0.2 }
+                                transition: { delay: 0.3, duration: 0.2 }
                             }}
                         >
                             <motion.div
