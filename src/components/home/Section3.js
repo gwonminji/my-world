@@ -56,6 +56,8 @@ export default function Section3(){
                         initial="initial"
                         whileInView="whileInView"
                     >
+                        {/* WORK<br />
+                        EXPERIENCE */}
                         스티키 영역
                     </motion.h1>
                     <motion.a 

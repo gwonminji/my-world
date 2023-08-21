@@ -8,8 +8,8 @@ import scrollLottie from "@assets/lottie/scroll.json";
 import styles from "@styles/components/home/section1.module.scss";
 
 export default function Section1(){
-    const text1 = "aaaaa"
-    const text2 = "bbbbb"
+    const text1 = "aaaaa";
+    const text2 = "bbbbb";
     const text1Arr = text1.split('');
     const text2Arr = text2.split('');
 

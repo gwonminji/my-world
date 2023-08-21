@@ -13,10 +13,10 @@ import { faHouse,
 import styles from "@styles/components/slidemenu.module.scss"
 
 const links = [
-    // { id: 1, name: "home", to: "/" },
-    // { id: 2, name: "about", to: "/about" },
-    // { id: 3, name: "work", to: "/work" },
-    // { id: 4, name: "contact", to: "/contact" },
+    // { id: 1, name: "HOME", to: "/", icon: faHouse },
+    // { id: 2, name: "ABOUT", to: "/about", icon: faIdCard },
+    // { id: 3, name: "WORK", to: "/work", icon: faList },
+    // { id: 4, name: "CONTACT", to: "/contact", icon: faEnvelope },
     { id: 1, name: "first", to: "/", icon: faHouse },
     { id: 2, name: "second", to: "/about", icon: faIdCard },
     { id: 3, name: "third", to: "/work", icon: faList },
@@ -31,6 +31,7 @@ const itemVariants = {
         opacity: 1
     }
 }
+
 const sideVariants = {
     closed: {
         transition: {
@@ -48,14 +49,14 @@ const sideVariants = {
 export default function SlideMenu(){
     const [open, cycleOpen] = useCycle(false, true);
 
-    useEffect(() => {
+    // useEffect(() => {
         
-        if(open){
-            document.body.classList.add("hidden")
-        }else{
-            document.body.classList.remove("hidden")
-        }
-    }, [open])
+    //     if(open){
+    //         document.body.classList.add("hidden")
+    //     }else{
+    //         document.body.classList.remove("hidden")
+    //     }
+    // }, [open])
     
     return(
         <aside>
@@ -82,23 +83,10 @@ export default function SlideMenu(){
                                 variants={sideVariants}
                             >
                             {links.map(({ name, to, id, icon }) => (
-                                // <motion.a
-                                //     key={id}
-                                //     href={to}
-                                //     className={styles["gnb__link"]}
-                                //     whileHover={{ scale: 1.1 }}
-                                //     variants={itemVariants}
-                                // >
-                                //     <FontAwesomeIcon icon={icon} />
-                                //     <span>{name}</span>
-                                // </motion.a>
                                 <Link 
                                     to={to}
                                     key={id}
                                     className={styles["gnb__link"]}
-                                    // whileHover={{ scale: 1.1 }}
-                                    // variants={itemVariants}
-                                    // onClick={cycleOpen}
                                 >
                                     <motion.span
                                         whileHover={{ scale: 1.1 }}

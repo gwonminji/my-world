@@ -51,7 +51,6 @@ function App() {
       <GlobalStyles />
       <Header />
       <SlideMenu />
-      {/* <SlideMenu /> */}
       <AnimatePresence>
         <Routes>
           <Route path="/" element={<Home />}/>
