@@ -5,7 +5,10 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faHouse, faIdCard, faIdBadge, faList, faBorderAll, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faHouse, 
+    faIdCard, faIdBadge, 
+    faList, faBorderAll, 
+    faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import styles from "@styles/components/slidemenu.module.scss"
 
@@ -15,8 +18,8 @@ const links = [
     // { id: 3, name: "work", to: "/work" },
     // { id: 4, name: "contact", to: "/contact" },
     { id: 1, name: "first", to: "/", icon: faHouse },
-    { id: 2, name: "second", to: "/about", icon: faIdBadge },
-    { id: 3, name: "third", to: "/work", icon: faBorderAll },
+    { id: 2, name: "second", to: "/about", icon: faIdCard },
+    { id: 3, name: "third", to: "/work", icon: faList },
     { id: 4, name: "fourth", to: "/contact", icon: faEnvelope },
 ];
 

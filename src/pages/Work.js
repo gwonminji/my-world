@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { motion, AnimatePresence } from "framer-motion";
@@ -136,6 +136,16 @@ export default function Work(){
     const [displayData, setDisplayData] = useState(data.items);
     const [active, setActive] = useState("all");
 
+    useEffect(() => {
+        const cateId = sessionStorage.getItem("cateId")
+        if(cateId === null || cateId === "undefined"){
+            return;
+        }else{
+            filterHandler(cateId);
+            sessionStorage.removeItem("cateId")
+        }
+    }, [])
+
     const filterHandler = (cate) => {
         if(cate === active) return;
         setActive(cate);
@@ -153,6 +163,10 @@ export default function Work(){
         setTimeout(() => {
             setDisplayData(filteredData);
         }, 400);
+    }
+
+    const setCateId = () => {
+        sessionStorage.setItem("cateId", active);
     }
 
     const [modalOpen, setModalOpen] = useState(false);
@@ -262,6 +276,7 @@ export default function Work(){
                                                     to={`/work/${item.id}`}
                                                     state={{data: item}}
                                                     title="more"
+                                                    onClick={setCateId}
                                                 >
                                                     <motion.span
                                                         whileHover={{ 
@@ -270,7 +285,7 @@ export default function Work(){
                                                                 duration: 0.25
                                                             } 
                                                         }}
-                                                        onClick={modalHandler}
+                                                        // onClick={modalHandler}
                                                     >
                                                         more
                                                     </motion.span>

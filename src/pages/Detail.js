@@ -10,12 +10,13 @@ export default function Detail(){
     const location = useLocation();
     const data = location.state.data;
     console.log(data);
+
     return(
         <main>
             <section className={styles.section}>
                 <div className={styles.wrap}>
                     <div className={styles["img-box"]}>
-                        <img src={data.img} title={data.title} />
+                        <img src={data.img} alt={data.title} />
                     </div>
                     <div className={styles["text-box"]}>
                         <p className={styles.year}>{data.year}</p>
