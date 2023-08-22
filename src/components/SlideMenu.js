@@ -17,10 +17,10 @@ const links = [
     // { id: 2, name: "ABOUT", to: "/about", icon: faIdCard },
     // { id: 3, name: "WORK", to: "/work", icon: faList },
     // { id: 4, name: "CONTACT", to: "/contact", icon: faEnvelope },
-    { id: 1, name: "first", to: "/", icon: faHouse },
-    { id: 2, name: "second", to: "/about", icon: faIdCard },
-    { id: 3, name: "third", to: "/work", icon: faList },
-    { id: 4, name: "fourth", to: "/contact", icon: faEnvelope },
+    { id: 1, name: "MENU1", to: "/", icon: faHouse },
+    { id: 2, name: "MENU2", to: "/about", icon: faIdCard },
+    { id: 3, name: "MENU3", to: "/work", icon: faList },
+    { id: 4, name: "MENU4", to: "/contact", icon: faEnvelope },
 ];
 
 const itemVariants = {

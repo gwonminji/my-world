@@ -28,7 +28,7 @@ export default function Marquee(){
                         animate="animate"
                     >
                         <h1>
-                            ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ. ABCDEFGHIJKLMNOPQRSTUVWXYZ.
+                            Lorem Ipsum Lorem Ipsum. Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum.
                             {/* Let's create something together. Drop me a line! */}
                         </h1>
                     </motion.div>

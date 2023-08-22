@@ -195,7 +195,7 @@ export default function Work(){
                         }
                     }}
                 >
-                    <Title title="title2" />
+                    <Title title="title" />
                     <div className={styles.filter}>
                     {
                         filters.map((item, i) => (

@@ -82,7 +82,7 @@ export default function About(){
             <Visual text={visualText} />
             <section className={`${styles.section} ${styles.section1}`}>
                 <div className="inner" >
-                    <Title title="title1" />
+                    <Title title="title" />
                     <motion.div 
                         className={styles["i-think"]}
                         variants={textAnim}
@@ -115,7 +115,7 @@ export default function About(){
             </section>
             <section className={`${styles.section} ${styles.section2}`}>
                 <div className="inner">
-                    <Title title="title2" />
+                    <Title title="title" />
                     <motion.ul
                         className={styles.history}
                         variants={parentAnim}
