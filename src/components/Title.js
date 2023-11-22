@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import styles from "@styles/components/title.module.scss"
 
-export default function Title(props){
+export default function Title({title}){
     const textAnim = {
         initial: { 
             y: "80%", 
@@ -24,7 +24,7 @@ export default function Title(props){
             initial="initial"
             whileInView="whileInView"
         >
-            {props.title}
+            {title}
         </motion.h1>
     )
 }

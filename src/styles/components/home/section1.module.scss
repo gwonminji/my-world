@@ -39,7 +39,7 @@
     font-weight: 300;
     color: #fff;
     text-align: center;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     &>span{
         display: inline-block;
         margin: 0 16px 0 0;
@@ -68,10 +68,10 @@
 
 @include tablet{
     .section{
-        height: $mobileInnerHeight;
+        height: $mobile-inner-height;
     }
     .visual{
-        min-height: calc(#{$mobileInnerHeight} - 163px);
+        min-height: calc(#{$mobile-inner-height} - 163px);
     }
 }
 @include mobile{

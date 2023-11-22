@@ -8,7 +8,7 @@
 }
 .filter{
     display: grid;
-    grid-template-columns: repeat(4, 160px);
+    grid-template-columns: repeat(5, 160px);
     grid-gap: 20px;
     justify-content: center;
     button{
@@ -19,6 +19,7 @@
         color: $color-dark-gray;
         font-weight: 500;
         border-radius: 40px;
+        text-transform: uppercase;
         cursor: pointer;
         &.active{
             background: $color-dark-navy;
@@ -56,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     strong{
         display: block;
         font-size: 32px;

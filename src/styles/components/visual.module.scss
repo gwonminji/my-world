@@ -27,10 +27,10 @@
 
 @include tablet{
     .visual-wrap{
-        height: $mobileInnerHeight;
+        height: $mobile-inner-height;
     }
     .visual{
-        height: $mobileInnerHeight;
+        height: $mobile-inner-height;
     }
     .visual-title{
         font-size: 14vw;

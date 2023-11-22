@@ -20,6 +20,7 @@ $desktop-container: 1400px;
 $tablet-container: 100%;
 $mobile-container: 100%;
 
-$mobileInnerHeight: calc(var(--vh, 1vh) * 100);
+$mobile-inner-height: calc(var(--vh, 1vh) * 100);
 
-$headerHeight: 100px;
+// $header-height: 100px;
+// $footer-height: 80px;

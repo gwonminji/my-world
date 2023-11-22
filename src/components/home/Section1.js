@@ -10,6 +10,8 @@ import styles from "@styles/components/home/section1.module.scss";
 export default function Section1(){
     const text1 = "Lorem";
     const text2 = "Ipsum";
+    // const text1 = "Gwon";
+    // const text2 = "MinJi";
     const text1Arr = text1.split('');
     const text2Arr = text2.split('');
 

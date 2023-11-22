@@ -9,18 +9,30 @@
     min-height: 100vh;
     display: flex;
 }
-.img-box{
-    padding: 180px 40px 180px 120px;
+.img-area{
+    display: flex;
+    justify-content: center;
+    // padding: 180px 40px 180px 120px;
+    padding: 180px 0;
     width: 50%;
     background: $color-dark-navy;
+}
+.img-box{
+    max-width: 600px;
     img{
         @include img-100auto;
     }
 }
-.text-box{
+.text-area{
+    // display: flex;
+    // justify-content: center;
+    // padding: 180px 0;
     padding: 180px 120px;
     width: 50%;
     background: $color-light-navy;;
+}
+.text-box{
+    max-width: 600px;
 }
 .year{
     margin: 0 0 80px 0;
@@ -47,7 +59,7 @@
     color: $color-dark-gray;
     line-height: 1.25;
     font-weight: 600;
-    transform: rotate(-4deg);
+    // transform: rotate(-4deg);
 }
 .text{
     font-size: 20px;

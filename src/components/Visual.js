@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import styles from "@styles/components/visual.module.scss";
 
-export default function Visual(props){
+export default function Visual({text}){
     const visualAnim = {
         start: { opacity: 0 },
         end: {
@@ -43,10 +43,6 @@ export default function Visual(props){
         <section className={styles["visual-wrap"]}>
             <div className="inner">
                 <div className={styles.visual}>
-                    {/* {props.text} */}
-                    {/* {
-                        props.text.map((e, i) => console.log(`${i} : ${e}`))
-                    } */}
                     <motion.h1 
                         className={styles["visual-title"]}
                         variants={visualAnim} 
@@ -54,7 +50,7 @@ export default function Visual(props){
                         animate="end"
                     >
                         {
-                            props.text.map((text, i) =>          
+                            text.map((text, i) =>          
                             <motion.span
                                 key={i}
                                 variants={i % 2 === 0 ? visualTextLeftAnim : visualTextRightAnim}

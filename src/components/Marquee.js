@@ -5,6 +5,8 @@ import {
 import styles from "@styles/components/marquee.module.scss";
 
 export default function Marquee(){
+    const marqueeText = "Lorem Ipsum Lorem Ipsum. Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum.";
+    // const marqueeText = "Let's create something together. Drop me a line!";
     const marqueeAnim = {
         animate: {
             x: [0, -1035],
@@ -12,7 +14,7 @@ export default function Marquee(){
                 x: {
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 12,
+                    duration: 5,
                     ease: "linear",
                 }
             }
@@ -20,19 +22,16 @@ export default function Marquee(){
     }
     return(
         <div className={styles["marquee-wrap"]}>
-            <div>
-                <div className={styles.marquee}>
-                    <motion.div
-                        className={styles.track}
-                        variants={marqueeAnim}
-                        animate="animate"
-                    >
-                        <h1>
-                            Lorem Ipsum Lorem Ipsum. Lorem Ipsum. Lorem Ipsum Lorem Ipsum. Lorem Ipsum.
-                            {/* Let's create something together. Drop me a line! */}
-                        </h1>
-                    </motion.div>
-                </div>
+            <div className={styles.marquee}>
+                <motion.div
+                    className={styles.track}
+                    variants={marqueeAnim}
+                    animate="animate"
+                >
+                    <h1>
+                        {marqueeText}
+                    </h1>
+                </motion.div>
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import styles from "@styles/components/header.module.scss"
+
 import logo from '@assets/images/logo.png';
 
 export default function Header(){

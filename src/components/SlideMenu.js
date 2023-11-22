@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom";
 import { useEffect } from 'react';
+
+import { Link } from "react-router-dom";
 
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faHouse, 
-    faIdCard, faIdBadge, 
-    faList, faBorderAll, 
+import { 
+    faHouse, 
+    faIdCard, 
+    faIdBadge, 
+    faList, 
+    faBorderAll, 
     faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import styles from "@styles/components/slidemenu.module.scss"

@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react"; 
+import { Link } from 'react-router-dom';
 
 import { motion, useScroll } from "framer-motion";
 
@@ -39,7 +40,7 @@ export default function Section3(){
     const [displayData, setDisplayData] = useState(data.items);
 
     useEffect(() => {
-        const latest = displayData.filter((item) => item.filter === "important");
+        const latest = displayData.filter(item => item.important);
         setDisplayData([]);
         setDisplayData(latest);
     }, [])
@@ -77,18 +78,29 @@ export default function Section3(){
                     <ul className={styles.list}>
                         {
                             displayData.map((item, i) => 
-                            <li 
+                            <motion.li 
                                 key={i}
                                 className={styles["list__item"]}
+                                whileHover={{ 
+                                    scale: 1.05,
+                                    transition: {
+                                        duration: 0.1
+                                    }
+                                }}
                             >
-                                <div className={styles["img-box"]}>
-                                    <img src={item.img} alt={item.title} />
-                                </div>
-                                <div className={styles["text-box"]}>
-                                    <span>{item.cate}</span>
-                                    <strong>{item.title}</strong>
-                                </div>
-                            </li>
+                                <Link
+                                    to={`/work/${item.id}`}
+                                    state={{data: item}}
+                                    title="more">
+                                    <div className={styles["img-box"]}>
+                                        <img src={item.img} alt={item.title} />
+                                    </div>
+                                    <div className={styles["text-box"]}>
+                                        <strong>{item.title}</strong>
+                                        <span>{item.cate}</span>
+                                    </div>
+                                </Link>
+                            </motion.li>
                             )
                         }
                     </ul>

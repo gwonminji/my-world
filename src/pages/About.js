@@ -12,8 +12,15 @@ import history from '@stores/historyList';
 import styles from "@styles/pages/about.module.scss";
 
 export default function About(){
-    const visualText = ["one", "two", "three"]
+    const visualText = ["111", "222", "333"];
+    // const visualText = ["want to", "know", "more?"];
 
+    const iAm = "Lorem ipsum.Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum. Lorem ipsumLorem ipsumLorem ipsumLorem ipsum. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum."
+    // const iAm = "저는 코드를 통해 UI를 그려내는 일을 좋아합니다. 컴포넌트 단위의 유지보수에 최적화 된 마크업과 의미있는 구조의 시멘틱 마크업에 관심이 많으며, CSS와 Javascript를 활용한 동적 모션을 구현하는 것과 사용자 입장에서 더 나은 UI 방향에 대해 고민하곤 합니다. 좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다."
+
+    const title = ["I aa", "Waaa Eaaaaaaa"];
+    // const title = ["I am", "Work Experience"];
+    
     const [skillData, setSkillData] = useState([]);
     const [historyData, setHistoryData] = useState([]);
 
@@ -82,16 +89,14 @@ export default function About(){
             <Visual text={visualText} />
             <section className={`${styles.section} ${styles.section1}`}>
                 <div className="inner" >
-                    <Title title="title" />
+                    <Title title={title[0]} />
                     <motion.div 
-                        className={styles["i-think"]}
+                        className={styles["i-am"]}
                         variants={textAnim}
                         initial="initial"
                         whileInView="whileInView"
                     >
-                        <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
-                        <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum. Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
-                        <p className={styles.text}>Lorem Ipsum Lorem Ipsum Lorem Ipsum.</p>
+                        <p className={styles.text}>{iAm}</p>
                     </motion.div>
                     <motion.ul
                         className={styles.skill}
@@ -100,9 +105,9 @@ export default function About(){
                         whileInView="whileInView" 
                     >
                         {
-                            skillData.map((item, i) => 
+                            skillData.map(item => 
                             <motion.li
-                                key={i}
+                                key={item.id}
                                 variants={skillAnim}
                             >
                                 <strong>{item.title}</strong>
@@ -115,7 +120,7 @@ export default function About(){
             </section>
             <section className={`${styles.section} ${styles.section2}`}>
                 <div className="inner">
-                    <Title title="title" />
+                    <Title title={title[1]} />
                     <motion.ul
                         className={styles.history}
                         variants={parentAnim}
@@ -123,16 +128,16 @@ export default function About(){
                         whileInView="whileInView" 
                     >
                         {
-                            historyData.map((item, i) => 
+                            historyData.map(item => 
                             <motion.li
-                                key={i}
+                                key={item.id}
                                 variants={historyAnim}
                             >
                                 <span>{item.year}</span>
-                                <p>
+                                <div>
                                     <strong>{item.title}</strong>
-                                    {item.text}
-                                </p>
+                                    <p>{item.text}</p>
+                                </div>
                             </motion.li>
                             )
                         }

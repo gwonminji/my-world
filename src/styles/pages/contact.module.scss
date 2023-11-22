@@ -22,7 +22,7 @@
     height: 100vh;
     h1{
         font-family: 'Poppins', sans-serif;
-        font-size: 8vw;
+        font-size: 6vw;
         color: #fff;
         font-weight: 900;
     }
@@ -116,11 +116,11 @@
 
 @include tablet{
     .contact{
-        min-height: $mobileInnerHeight;
+        min-height: $mobile-inner-height;
     }
     .section{
         &.section1{
-            min-height: $mobileInnerHeight;
+            min-height: $mobile-inner-height;
         }
         &.section2{
             padding: 100px 0;
