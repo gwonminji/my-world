@@ -3,7 +3,7 @@
 .marquee-wrap{
   position: fixed;
   width: 100%;
-  bottom: 100px;
+  bottom: $footer-height;
 }
 .marquee {
   position: relative;

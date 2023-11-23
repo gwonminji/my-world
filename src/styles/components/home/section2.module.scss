@@ -1,4 +1,5 @@
 @import "@styles/helpers/global";
+
 .section{
   position: relative;
   background: #fff;
@@ -46,11 +47,6 @@
   .section{
     padding: 180px 0;
   }
-  .inner{
-    p{
-      font-size: 56px;
-    }
-  }
 }
 
 @include mobile{
@@ -59,7 +55,7 @@
   }
   .inner{
     p{
-      font-size: 32px;
+      font-size: 24px;
     }
   }
 }
