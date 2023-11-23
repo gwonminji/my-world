@@ -94,6 +94,9 @@
 }
 
 @include tablet{
+    .filter{
+        grid-template-columns: repeat(3, 160px);
+    }
     .section{
         padding: 100px 0;
     }
