@@ -68,18 +68,20 @@ export default function Section3(){
                         initial="initial"
                         whileHover="whileHover"
                         whileTap="whileTap" 
-                        title="More"
+                        // title="포트폴리오 더 보기"
+                        title="더 보기"
                     >
-                        More
+                        {/* 포트폴리오 더 보기 */}
+                        더 보기
                     </motion.a>
                 </div>
                 <div className={styles["list-box"]}>
                     <motion.div className={styles.bg} style={{ scaleX: scrollYProgress }}></motion.div>
                     <ul className={styles.list}>
                         {
-                            displayData.map((item, i) => 
+                            displayData.map(item => 
                             <motion.li 
-                                key={i}
+                                key={item.id}
                                 className={styles["list__item"]}
                                 whileHover={{ 
                                     scale: 1.05,
@@ -91,13 +93,14 @@ export default function Section3(){
                                 <Link
                                     to={`/work/${item.id}`}
                                     state={{data: item}}
-                                    title="more">
+                                    title={`${item.title} 상세 페이지로 이동`}>
                                     <div className={styles["img-box"]}>
                                         <img src={item.img} alt={item.title} />
                                     </div>
+                                    <span className={styles.year}>{item.year}</span>
+                                    <strong className={styles.title}>{item.title}</strong>
                                     <div className={styles["text-box"]}>
-                                        <strong>{item.title}</strong>
-                                        <span>{item.cate}</span>
+                                        {item.tag.map((value, i) => <span key={i}>#{value}</span>)}
                                     </div>
                                 </Link>
                             </motion.li>

@@ -21,12 +21,17 @@ export default function Detail(){
                         </div>
                     </div>
                     <div className={styles["text-area"]}>
-                        {/* <p className={styles.year}>{data.year}</p> */}
+                        <span className={styles.highlight}>WORK DETAIL</span>
+                        <h1 className={styles.title}>
+                            {data.title}
+                            <span className={styles.year}>{data.year}</span>
+                        </h1>
                         <div className={styles["text-box"]}>
-                            <span className={styles.cate}>{data.cate}</span>
-                            <strong className={styles.title}>{data.title}</strong>
-                            <p className={styles.text}>{data.text}</p>
+                            {/* <span>{data.cate}</span> */}
+                            {/* <span>{data.summary}</span> */}
+                            <span>{data.tag.map((v, i) => <span key={i}>#{v}</span>)}</span>
                         </div>
+                        <p className={styles.detail}>{data.detail}</p>
                     </div>
                 </div>
             </section>

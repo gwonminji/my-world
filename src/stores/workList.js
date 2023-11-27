@@ -3,300 +3,399 @@ const data = {
         {
             id: 1,
             cate: "responsive",
+            year: "23 - 21",
             img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
             title: "텍스트 텍스트텍스트텍스트 테스트",
             summary: "ㅁㅁ / ㅁㅁㅁㅁ ㅁㅁㅁㅁ / ㅁㅁㅁㅁ",
             url: "",
-            important: false
+            important: false,
+            tag: [""],
+            detail: ""
         },
         {
             id: 2,
             cate: "adaptive",
+            year: "23 - 21",
             img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
             title: "텍스트 텍스트텍스트텍스트 테스트",
             summary: "ㅁㅁ / ㅁㅁㅁㅁ ㅁㅁㅁㅁ / ㅁㅁㅁㅁ",
             url: "",
-            important: false
+            important: false,
+            tag: [""],
+            detail: ""
         },
         {
             id: 3,
             cate: "pc",
+            year: "23 - 21",
             img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
             title: "텍스트 텍스트텍스트텍스트 테스트",
             summary: "ㅁㅁ / ㅁㅁㅁㅁ ㅁㅁㅁㅁ / ㅁㅁㅁㅁ",
             url: "",
-            important: true
+            important: true,
+            tag: ["responsive", "text"],
+            detail: "가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라"
         },
         {
             id: 4,
             cate: "pc",
+            year: "21 - 20",
             img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
             title: "텍스트 텍스트텍스트텍스트 테스트",
             summary: "ㅁㅁ / ㅁㅁㅁㅁ ㅁㅁㅁㅁ / ㅁㅁㅁㅁ",
             url: "",
-            important: true
+            important: true,
+            tag: ["ui/ux", "text"],
+            detail: "가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라 가나다라가나다라가나다라"
         },
         {
             id: 5,
             cate: "mobile",
+            year: "20 - 19",
             img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
             title: "텍스트 텍스트텍스트텍스트 테스트",
             summary: "ㅁㅁ / ㅁㅁㅁㅁ ㅁㅁㅁㅁ / ㅁㅁㅁㅁ",
             url: "",
-            important: true
+            important: true,
+            tag: ["webview", "sssdsf"],
+            detail: "가나다라가나다라 가나다라가나 가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라가나다라"
         },
 
         // {
         //     id: 1,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://m.media-amazon.com/images/I/61icbTpCVgL.jpg",
         //     title: "에이엔테크놀로지 사이트 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "http://www.antech.kr",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 2,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://images.unsplash.com/photo-1547731030-cd126f44e9c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hY2Jvb2t8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=200&q=75",
         //     title: "서울대공대여성동창회 사이트 구축 및 운영",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "https://winns.snu.ac.kr",
-        //     important: false       
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""       
         // },
         // {
         //     id: 3,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "빵준서라운지 사이트 구축 및 운영",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "https://www.bbangjunseo.com",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 4,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "demasian 브랜드사이트 구축 및 운영",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "https://www.demasian.com",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 5,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "웨비나 - 기아인사이트 운영",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / vue.js 퍼블리싱",
         //     url: "https://www.transformationkia.com/test",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive", "vue.js"],
+        //     detail: ""
         // },
         // {
         //     id: 6,
         //     cate: "responsive",
+        //     year: "23-21",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "마켓센스 쇼핑몰 구축 및 운영",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "https://mkss.app",
-        //     important: true
+        //     important: true,
+        //     tag: ["responsive", "scss"],
+        //     detail: "누구나 쇼핑몰을 개설할 수 있고, 쇼핑을 하면 후원이 되는 후원 플랫폼입니다. UX/UI를 논의하기 위해 Zeplin을 활용했습니다. 퍼블리싱 파트를 전담하여 scss를 이용한 UI 개발을 진행했습니다. 개인 취향을 고려한 쇼핑몰 테마(컬러) 선택 기능을 넣었고, 반응형 UI를 적용하여 결과물의 완성도를 높였습니다."
         // },
         // {
         //     id: 7,
         //     cate: "adaptive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "데마시안샵 쇼핑몰 운영",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC, 모바일 적응형웹",
         //     url: "https://www.dmsn.tv/shop",
-        //     important: false
+        //     important: false,
+        //     tag: ["adaptive"],
+        //     detail: ""
         // },
         // {
         //     id: 8,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "영월청년사업단 사이트 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "https://www.yw.go.kr/youth/",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 9,
         //     cate: "mobile",
+        //     year: "21-20",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "비너스이숍 모바일앱 리뉴얼",
         //     summary: "메인 / 퍼블리싱 단독작업 / 하이브리드앱",
         //     url: "https://github.com/gwonminji/mobile-eshop",
-        //     important: true
+        //     important: true,
+        //     tag: ["hybrid app", "webview"],
+        //     detail: "비너스 브랜드의 자사 쇼핑몰 어플리케이션입니다. 기존 서비스의 디자인 리뉴얼 프로젝트로 하이브리드앱 웹뷰 퍼블리싱 파트를 전담하여 UI 개발 업무를 맡았습니다. 오랫동안 운영되어 온 서비스였던 만큼 레거시 코드를 걷어내고 개선하는 작업들이 많이 필요했습니다."
         // },
         // {
         //     id: 10,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "삼성카드 S-EDTS 시스템 고도화",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["bootstrap"],
+        //     detail: ""
         // },
         // {
         //     id: 11,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "교보생명 GreenT시스템 고도화",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["adaptive"],
+        //     detail: ""
         // },
         // {
         //     id: 12,
         //     cate: "responsive",
+        //     year: "20",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "삼성증권 회사소개 홈페이지 리뉴얼",
         //     summary: "서브 / 퍼블리싱 참여도 80% / 국·영문 반응형웹 / 웹와치 웹접근성 인증마크 획득",
         //     url: "https://www.samsungsecurities.co.kr/kor/main.do",
-        //     important: true
+        //     important: true,
+        //     tag: ["responsive", "웹접근성 인증마크"],
+        //     detail: "기업을 소개하기 위한 웹사이트입니다. fullpage.js를 사용한 스크롤 인터랙션을 통해 사용자의 이목을 끌고 흥미를 유지하여 콘텐츠에 집중할 수 있게 합니다. 국/영문 반응형 UI를 적용하였고 웹와치 접근성 인증마크 획득으로 결과물의 완성도를 높였습니다."
         // },
         // {
         //     id: 13,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "SKT CDTS 시스템 고도화",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹 / Bootstrap",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["bootstrap"],
+        //     detail: ""
         // },
         // {
         //     id: 14,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "삼성증권 회의실예약 시스템 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 15,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "삼성증권 CreaTV 사이트 리뉴얼",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 16,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "라이나생명 PIOMS 리뉴얼",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 17,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "일진 전자전표 솔루션 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹 / Bulma css / dhtmlx grid",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["bulma css", "dhtmlx grid"],
+        //     detail: ""
         // },
         // {
         //     id: 18,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "삼성증권 행복마루 커뮤니티 리뉴얼",
         //     summary: "서브 / 퍼블리싱 참여도 50% / PC웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 19,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "한국금융IT 한국가상화폐거래소 KOVEX 홍보 사이트 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 20,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "대우건설 공공데이터 활용 시스템 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹 / 공공데이터 기반 지도연계 및 부동산 정보 제공",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 21,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "SK 브로드밴드 위협인텔리전스 시스템 리뉴얼",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / Bootstrap / ChartJS",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["bootstrap", "chart.js"],
+        //     detail: ""
         // },
         // {
         //     id: 22,
         //     cate: "pc",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "SK Aibril Engage System 구축",
         //     summary: "메인 / 퍼블리싱 단독작업 / PC웹 / Bootstrap",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 23,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "투씨엘시스템 BizCloud 리뉴얼",
         //     summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / Bootstrap",
         //     url: "",
-        //     important: false
+        //     important: false,
+        //     tag: ["bootstrap"],
+        //     detail: ""
         // },
         // {
         //     id: 24,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "KORAIL 스마트 학사관리 시스템 인재개발원 리뉴얼",
         //     summary: "서브 / 퍼블리싱 참여도 50% / 반응형웹",
         //     url: "http://cyber.korail.com/front",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 25,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "KORAIL 스마트 학사관리 시스템 적성검사 구축",
         //     summary: "서브 / 퍼블리싱 참여도 50% / 반응형웹",
         //     url: "https://kra.korail.com",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 26,
         //     cate: "responsive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "국기원 사이버 연수원 리뉴얼",
         //     summary: "메인 / 퍼블리싱 단독작업 / 국·영문 반응형웹",
         //     url: "http://wta.kukkiwon.or.kr/kr",
-        //     important: false
+        //     important: false,
+        //     tag: ["responsive"],
+        //     detail: ""
         // },
         // {
         //     id: 27,
         //     cate: "adaptive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "KNA 대한간호협회 회원등록센터 리뉴얼",
         //     summary: "서브 / 퍼블리싱 참여도 50% / PC, 모바일 적응형웹 / print css",
         //     url: "http://membership.koreanurse.or.kr",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // },
         // {
         //     id: 28,
         //     cate: "adaptive",
+        //     year: "",
         //     img: "https://media.istockphoto.com/id/640970604/ko/%EC%82%AC%EC%A7%84/%EB%B0%94%EB%8B%A4-%EC%84%B8%EB%A1%9C-%EC%82%AC%EC%A7%84-%EC%9D%BC%EC%B6%9C.jpg?s=170667a&w=0&k=20&c=z0FzfG7OR3s17v1sNIp7j1eotJwK-pSRKwosUJS_35E=",
         //     title: "KNA 대한간호협회 면허신고센터 리뉴얼",
         //     summary: "서브 / 퍼블리싱 참여도 40% / PC, 모바일 적응형웹",
         //     url: "http://lic.kna.or.kr/lic/user/main.do",
-        //     important: false
+        //     important: false,
+        //     tag: [""],
+        //     detail: ""
         // }
     ]
 };

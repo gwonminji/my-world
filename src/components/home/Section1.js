@@ -38,21 +38,6 @@ export default function Section1(){
         offset: ["70vh", 0]
     });
 
-    const bounce = {
-        initial: {
-            opacity: 0.5,
-            y: 4
-        },
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1,
-                repeat: Infinity,
-                repeatType: "reverse"
-            }
-        }
-    }
     return(
         <section className={styles.section}>
             <div className={styles.inner} ref={innerRef}>
@@ -92,15 +77,7 @@ export default function Section1(){
                     className={styles.scroll}
                     style={{ opacity: scrollYProgress }}
                 >
-                    <span>Scroll Down</span>                    
-                    {/* <motion.span
-                        className={styles.bounce}
-                        variants={bounce}
-                        initial="initial"
-                        animate="animate"
-                    >
-                    ️❤️
-                    </motion.span> */}
+                    <span>Scroll Down</span>
                     <Lottie animationData={scrollLottie} />
                 </motion.div>
             </div>
