@@ -19,6 +19,21 @@ export default function Section3(){
             } 
         }
     }
+
+    const boxAnim = {
+        initial: {
+            opacity: 0.2,
+            y: 200
+        },
+        whileInView: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.2,
+                duration: 0.5
+            }
+        }
+    }
     
     const Hover = {
         initial: {
@@ -77,12 +92,19 @@ export default function Section3(){
                 </div>
                 <div className={styles["list-box"]}>
                     <motion.div className={styles.bg} style={{ scaleX: scrollYProgress }}></motion.div>
-                    <ul className={styles.list}>
+                    <motion.ul className={styles.list}
+                        variants={boxAnim}
+                        initial="initial"
+                        whileInView="whileInView"
+                    >
                         {
                             displayData.map(item => 
                             <motion.li 
                                 key={item.id}
                                 className={styles["list__item"]}
+                                // variants={boxAnim}
+                                // initial="initial"
+                                // whileInView="whileInView"
                                 whileHover={{ 
                                     scale: 1.05,
                                     transition: {
@@ -106,7 +128,7 @@ export default function Section3(){
                             </motion.li>
                             )
                         }
-                    </ul>
+                    </motion.ul>
                 </div>
             </div>
         </section>
