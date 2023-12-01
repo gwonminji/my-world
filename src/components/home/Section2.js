@@ -10,18 +10,11 @@ import {
 import styles from "@styles/components/home/section2.module.scss";
 
 const content = [
-    "Lorem ipsum dolor sit amet, ",
-    "sed do eiusmod tempor ",
-    "dolore magna aliqua. Ut ",
-    "quis nostrud exercitation ",
-    "nisi ut aliquip ex ",
-    "Duis aute irure dolor"
-    // "안녕하세요.", 
-    // "n년차 UI개발자 권민지입니다.",
-    // "좋아하는 일을 즐기며 UI개발을 하고 있습니다.", 
-    // "웹퍼블리싱을 능숙하게 작업할 수 있어요.",
-    // "다양한 해상도에서도 잘 보이는 반응형, 웹 접근성과 웹표준을 고려한 웹페이지를 그려냅니다.",
-    // "좋아하는 일을 즐기면서 오늘도 즐겁게 일하고 있어요!"
+    "안녕하세요.", 
+    "8년차 웹퍼블리셔 권민지입니다.",
+    "웹퍼블리싱을 능숙하게 작업할 수 있어요.",
+    "다양한 해상도에서도 잘 보이는 반응형, 웹 접근성과 웹표준을 고려한 웹페이지를 탄탄한 코드로 그려냅니다.",
+    "좋아하는 일을 즐기면서 오늘도 즐겁게 일하고 있어요!"
 ];
 
 const ContentLine = ({ content }) => {

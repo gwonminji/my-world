@@ -10,12 +10,10 @@ import Title from '@components/Title';
 import styles from "@styles/pages/contact.module.scss";
 
 export default function Contact(){
-    const visualText = "aaaa aa aa aaaaa";
-    // const visualText = "send me an email";
+    const visualText = "Please send me an email.";
     const text = visualText.split('');
 
-    const title = "aaaaaaaa";
-    // const title = "함께 일할 동료를 찾고 계신가요? 합류 및 협업 제안이 있으시다면 언제든지 연락해 주세요!";
+    const title = "함께 일할 동료를 찾고 계신가요?\n합류 및 협업 제안이 있으시다면 언제든지 메일을 보내주세요!";
 
     const textAnim = {
         initial: {
@@ -133,7 +131,6 @@ export default function Contact(){
             </section>
             <section className={`${styles.section} ${styles.section2}`}>
                 <div className="inner">
-                    {/* <motion.p></motion.p> */}
                     <Title title={title} />
                     <motion.div 
                         className={styles["form-wrap"]}

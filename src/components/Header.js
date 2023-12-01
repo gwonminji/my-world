@@ -7,8 +7,7 @@ export default function Header(){
         <header className={styles.header}>
             <a href="/">
                 <h1 className={styles.logo}>
-                    {/* <img src={logo} alt="Hello" /> */}
-                    <img src="" alt="Hello" />
+                    <img src={logo} alt="MJ" />
                 </h1>
             </a>
         </header>

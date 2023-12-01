@@ -14,14 +14,11 @@ import work from '@stores/workList';
 import styles from "@styles/pages/work.module.scss";
 
 export default function Work(){
-    const visualText = ["three", "two", "one"];
-    // const visualText = ["want to", "see", "more?"];
+    const visualText = ["want to", "know", "more?"];
 
     const filters = ["all", "responsive", "adaptive", "pc", "mobile"];
-    // const filters = ["ALL", "RESPONSIVE", "PC", "MOBILE"];
 
-    const title = "Paaaaaaaa";
-    // const title = "Portfolio";
+    const title = "Portfolio";
 
     const [displayData, setDisplayData] = useState(work.items);
     const [active, setActive] = useState("all");
@@ -129,7 +126,7 @@ export default function Work(){
                                         >
                                             <div className={styles["img-box"]}>
                                                 <motion.img
-                                                    src={item.img}
+                                                    src={`${process.env.PUBLIC_URL}${item.img}`}
                                                     className={styles.img}
                                                 />
                                             </div>

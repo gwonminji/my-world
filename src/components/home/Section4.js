@@ -6,6 +6,8 @@ import { CgBrowser } from "react-icons/cg";
 
 import styles from "@styles/components/home/section4.module.scss";
 
+import profile from '@assets/images/img_profile.jpg';
+
 export default function Section4(){ 
     const { scrollYProgress } = useScroll(); 
     // scrollYProgress.onChange(x => {
@@ -25,43 +27,29 @@ export default function Section4(){
             }
         }
     }
+
+    const title = "함께 일할 동료를 찾고 계신가요?";
+
     return(
         <section className={styles.section}>
             <div className="inner">
-                {/* <div className={styles.out}>
-                    <motion.h1 
-                        className={styles.title1}
-                        variants={textAnim}
-                        initial="initial"
-                        whileInView="whileInView"
-                    >
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    </motion.h1>
-                    <motion.div 
-                        className={styles.box}
-                        style={{ scale: scrollYProgress }}
-                    >
-                        <p>텍스트1</p>
-                        <p>텍스트2</p>
-                        <p>텍스트3</p>
-                    </motion.div>
-                </div> */}
                 <motion.h1 
                     className={styles.title}
                     variants={textAnim}
                     initial="initial"
                     whileInView="whileInView"
                 >
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    {title}
                 </motion.h1>
                 <motion.div 
                     className={styles.box}
                     style={{ scale: scrollYProgress }}
                 >
-                    <div>
+                    <div className={styles["img-box"]}>
+                        <img src={profile} alt="권민지" />
                     </div>
-                    <ul>
-                        <li>UI Developer 권민지</li>
+                    <ul className={styles.profile}>
+                        <li>web publisher 권민지</li>
                         <li><BsTelephone /><a href="tel:01094341823" title="01094341823으로 전화걸기">010.9434.1823</a></li>
                         <li><CgBrowser /><a href="http://gwonminji.github.io" target="_blank" title="새창으로 열림">http://gwonminji.github.io</a></li>
                     </ul>

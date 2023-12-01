@@ -17,14 +17,10 @@ import {
 import styles from "@styles/components/slidemenu.module.scss"
 
 const links = [
-    // { id: 1, name: "HOME", to: "/", icon: faHouse },
-    // { id: 2, name: "ABOUT", to: "/about", icon: faIdCard },
-    // { id: 3, name: "WORK", to: "/work", icon: faList },
-    // { id: 4, name: "CONTACT", to: "/contact", icon: faEnvelope },
-    { id: 1, name: "MENU1", to: "/", icon: faHouse },
-    { id: 2, name: "MENU2", to: "/about", icon: faIdCard },
-    { id: 3, name: "MENU3", to: "/work", icon: faList },
-    { id: 4, name: "MENU4", to: "/contact", icon: faEnvelope },
+    { id: 1, name: "HOME", to: "/", icon: faHouse },
+    { id: 2, name: "ABOUT", to: "/about", icon: faIdCard },
+    { id: 3, name: "WORK", to: "/work", icon: faList },
+    { id: 4, name: "CONTACT", to: "/contact", icon: faEnvelope }
 ];
 
 const itemVariants = {
@@ -91,6 +87,7 @@ export default function SlideMenu(){
                                     to={to}
                                     key={id}
                                     className={styles["gnb__link"]}
+                                    title={name}
                                 >
                                     <motion.span
                                         whileHover={{ scale: 1.1 }}

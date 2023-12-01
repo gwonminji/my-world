@@ -11,7 +11,6 @@
     .logo{
         width: 60px;
         height: 60px;
-        border: 1px solid lightgray;
         img{
             @include img-100auto;
         }
@@ -29,8 +28,6 @@
 
 @include mobile{
     .header{
-        // top: 10px;
-        // left: 10px;
         .logo{
             width: 40px;
             height: 40px;

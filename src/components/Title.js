@@ -24,7 +24,12 @@ export default function Title({title}){
             initial="initial"
             whileInView="whileInView"
         >
-            {title}
+            {title.split("\n").map((txt) => (
+                <>
+                {txt}
+                <br />
+                </>
+            ))}
         </motion.h1>
     )
 }

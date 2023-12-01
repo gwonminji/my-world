@@ -27,9 +27,7 @@ export default function Detail(){
                             <span className={styles.year}>{data.year}</span>
                         </h1>
                         <div className={styles["text-box"]}>
-                            {/* <span>{data.cate}</span> */}
-                            {/* <span>{data.summary}</span> */}
-                            <span>{data.tag.map((v, i) => <span key={i}>#{v}</span>)}</span>
+                            <span>{data.tag.map((value, i) => <span key={i}>{value}</span>)}</span>
                         </div>
                         <p className={styles.detail}>{data.detail}</p>
                     </div>

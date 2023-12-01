@@ -72,9 +72,8 @@ export default function Section3(){
                         initial="initial"
                         whileInView="whileInView"
                     >
-                        {/* WORK<br />
-                        EXPERIENCE */}
-                        스티키 영역
+                        WORK<br />
+                        EXPERIENCE
                     </motion.h1>
                     <motion.a 
                         href="/work" 
@@ -83,11 +82,9 @@ export default function Section3(){
                         initial="initial"
                         whileHover="whileHover"
                         whileTap="whileTap" 
-                        // title="포트폴리오 더 보기"
-                        title="더 보기"
+                        title="포트폴리오 더 보기"
                     >
-                        {/* 포트폴리오 더 보기 */}
-                        더 보기
+                        포트폴리오 더 보기
                     </motion.a>
                 </div>
                 <div className={styles["list-box"]}>
@@ -102,9 +99,6 @@ export default function Section3(){
                             <motion.li 
                                 key={item.id}
                                 className={styles["list__item"]}
-                                // variants={boxAnim}
-                                // initial="initial"
-                                // whileInView="whileInView"
                                 whileHover={{ 
                                     scale: 1.05,
                                     transition: {
@@ -122,7 +116,7 @@ export default function Section3(){
                                     <span className={styles.year}>{item.year}</span>
                                     <strong className={styles.title}>{item.title}</strong>
                                     <div className={styles["text-box"]}>
-                                        {item.tag.map((value, i) => <span key={i}>#{value}</span>)}
+                                        {item.tag.map((value, i) => <span key={i}>{value}</span>)}
                                     </div>
                                 </Link>
                             </motion.li>
