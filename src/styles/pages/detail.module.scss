@@ -11,13 +11,12 @@
 }
 .img-area{
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding: 100px 20px;
     width: 50%;
     background: $color-dark-navy;
 }
 .img-box{
-    max-width: 520px;
     img{
         @include img-100auto;
     }
@@ -53,6 +52,14 @@
     color: $color-dark-gray;
     line-height: 1.25;
     font-weight: 900;
+    a{
+        color: $color-dark-gray;
+        // svg{
+        //     margin: 0 0 0 16px;
+        //     vertical-align: middle;
+        //     font-size: 40px;
+        // }
+    }
 }
 .text-box{
     margin: 40px 0 0 0;
@@ -117,6 +124,11 @@
     .title{
         margin: 200px 0 0 0;
         font-size: 64px;
+        // a{
+        //     svg{
+        //         font-size: 30px;
+        //     }
+        // }
     }
     .text-box{
         display: flex;
@@ -141,6 +153,11 @@
     .title{
         margin: 140px 0 0 0;
         font-size: 40px;
+        // a{
+        //     svg{
+        //         font-size: 26px;
+        //     }
+        // }
     }
     .text-box{
         display: flex;

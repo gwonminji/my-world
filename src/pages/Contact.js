@@ -10,7 +10,7 @@ import Title from '@components/Title';
 import styles from "@styles/pages/contact.module.scss";
 
 export default function Contact(){
-    const visualText = "Please send me an email.";
+    const visualText = "Send me an email";
     const text = visualText.split('');
 
     const title = "함께 일할 동료를 찾고 계신가요?\n합류 및 협업 제안이 있으시다면 언제든지 메일을 보내주세요!";

@@ -6,7 +6,7 @@ export default function Marquee(){
     const marqueeText = "Let's create something together. Drop me a line! Let's create something together.";
     const marqueeAnim = {
         animate: {
-            x: [0, -5000],
+            x: [0, -4000],
             transition: {
                 x: {
                     repeat: Infinity,

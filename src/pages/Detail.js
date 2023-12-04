@@ -23,7 +23,8 @@ export default function Detail(){
                     <div className={styles["text-area"]}>
                         <span className={styles.highlight}>WORK DETAIL</span>
                         <h1 className={styles.title}>
-                            {data.title}
+                            {data.url === "" ? <>{data.title}</> : <a href={data.url} title={`${data.title} 새창으로 열림`} target="_blank">{data.title}</a>}
+                            {/* <a href={data.url} title={`${data.title} 새창으로 열림`} target="_blank">{data.title}<FaExternalLinkAlt /></a> */}
                             <span className={styles.year}>{data.year}</span>
                         </h1>
                         <div className={styles["text-box"]}>

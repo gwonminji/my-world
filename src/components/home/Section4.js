@@ -50,8 +50,8 @@ export default function Section4(){
                     </div>
                     <ul className={styles.profile}>
                         <li>web publisher 권민지</li>
-                        <li><BsTelephone /><a href="tel:01094341823" title="01094341823으로 전화걸기">010.9434.1823</a></li>
-                        <li><CgBrowser /><a href="http://gwonminji.github.io" target="_blank" title="새창으로 열림">http://gwonminji.github.io</a></li>
+                        <li><BsTelephone />010.9434.1823</li>
+                        <li><CgBrowser />http://gwonminji.github.io</li>
                     </ul>
                 </motion.div>
             </div>

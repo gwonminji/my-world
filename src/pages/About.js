@@ -12,10 +12,10 @@ import history from '@stores/historyList';
 import styles from "@styles/pages/about.module.scss";
 
 export default function About(){
-    const visualText = ["nice to", "meet", "you"];
+    const visualText = ["want to", "know", "more?"];
 
 
-    const iAm = "저는 코드를 통해 UI를 그려내는 일을 좋아합니다. 컴포넌트 단위의 유지보수에 최적화 된 마크업과 의미있는 구조의 시멘틱 마크업에 관심이 많으며, 사용자 입장에서 더 나은 UI 방향에 대해 고민하곤 합니다. 좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다."
+    const iAm = "저는 코드를 통해 UI를 그려내는 일을 좋아합니다. 컴포넌트 단위의 유지보수에 최적화 된 마크업과 의미있는 구조의 시멘틱 마크업에 관심이 많습니다. 사용자 입장에서 더 나은 UI 방향에 대해 고민하며 동료들과 함께 멋지고 즐거운 웹을 만드는 일을 좋아합니다. 좋아하는 일을 더 잘하고 싶다는 마음으로 늘 고민하고 배우며 더 나은 방향으로 나아가고 있습니다."
     
     const title = ["I am", "Work Experience"];
     

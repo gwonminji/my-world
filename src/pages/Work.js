@@ -14,7 +14,7 @@ import work from '@stores/workList';
 import styles from "@styles/pages/work.module.scss";
 
 export default function Work(){
-    const visualText = ["want to", "know", "more?"];
+    const visualText = ["want to", "portfolio", "more?"];
 
     const filters = ["all", "responsive", "adaptive", "pc", "mobile"];
 
@@ -132,14 +132,16 @@ export default function Work(){
                                             </div>
                                             <motion.div 
                                                 className={styles["text-box"]}
-                                                initial={{ opacity: 0 }}
-                                                whileHover={{ 
-                                                    opacity: 1,
-                                                    transition: {
-                                                        duration: 0.25
-                                                    }
-                                                }}
+                                                // initial={{ opacity: 0 }}
+                                                // whileHover={{ 
+                                                //     opacity: 1,
+                                                //     transition: {
+                                                //         duration: 0.25
+                                                //     }
+                                                // }}
                                             >
+                                                <strong>{item.title}</strong>
+                                                <p>{item.tag.map((value, i) => <span key={i}>{value}</span>)}</p>
                                                 {/* <strong>{item.title}</strong> */}
                                                 {/* <motion.button
                                                     id={item.id}
@@ -153,13 +155,7 @@ export default function Work(){
                                                     title="more"
                                                 >more
                                                 </motion.button> */}
-                                                <Link
-                                                    // to={{
-                                                    //     pathname: `/work/${item.id}`,
-                                                    //     state: {
-                                                    //         data: item
-                                                    //     }
-                                                    // }}
+                                                {/* <Link
                                                     to={`/work/${item.id}`}
                                                     state={{data: item}}
                                                     title="Detail"
@@ -172,11 +168,10 @@ export default function Work(){
                                                                 duration: 0.25
                                                             } 
                                                         }}
-                                                        // onClick={modalHandler}
                                                     >
                                                         Detail
                                                     </motion.span>
-                                                </Link>
+                                                </Link> */}
                                             </motion.div>
                                         </motion.div>
                                     ))

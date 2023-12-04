@@ -4,7 +4,7 @@ const data = {
             id: 1,
             cate: "responsive",
             year: "2023",
-            img: "/images/work/img_proj10.png",
+            img: "/images/work/img_proj28.png",
             title: "에이엔테크놀로지",
             project: "에이엔테크놀로지 사이트 구축",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -17,7 +17,7 @@ const data = {
             id: 2,
             cate: "responsive",
             year: "2022",
-            img: "/images/work/img_proj6.png",
+            img: "/images/work/img_proj27.png",
             title: "서울대공대여성동창회",
             project: "서울대공대여성동창회 사이트 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -30,33 +30,33 @@ const data = {
             id: 3,
             cate: "responsive",
             year: "2022",
-            img: "/images/work/img_proj14.jpg",
+            img: "/images/work/img_proj26.png",
             title: "빵준서라운지",
             project: "빵준서라운지 사이트 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
             url: "https://www.bbangjunseo.com",
             important: false,
-            tag: ["#responsive", "sass", "bem"],
+            tag: ["#responsive", "#scss", "#bem"],
             detail: ""
         },
         {
             id: 4,
             cate: "responsive",
             year: "2021",
-            img: "/images/work/img_proj9.jpg",
+            img: "/images/work/img_proj25.png",
             title: "demasian 브랜드사이트",
             project: "demasian 브랜드사이트 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
             url: "https://www.demasian.com",
             important: false,
-            tag: ["#responsive"],
+            tag: ["#responsive", "#scss"],
             detail: ""
         },
         {
             id: 5,
             cate: "responsive",
             year: "2023 - 2021",
-            img: "/images/work/img_proj20.png",
+            img: "/images/work/img_proj24.png",
             title: "웨비나 - 기아인사이트",
             project: "웨비나 - 기아인사이트 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / vue.js 퍼블리싱",
@@ -69,7 +69,7 @@ const data = {
             id: 6,
             cate: "responsive",
             year: "2023-2021",
-            img: "/images/work/img_proj3.png",
+            img: "/images/work/img_proj23.png",
             title: "마켓센스 쇼핑몰",
             project: "마켓센스 쇼핑몰 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -82,20 +82,20 @@ const data = {
             id: 7,
             cate: "adaptive",
             year: "2023-2021",
-            img: "/images/work/img_proj14.jpg",
+            img: "/images/work/img_proj22.png",
             title: "데마시안샵 쇼핑몰",
             project: "데마시안샵 쇼핑몰 운영",
             summary: "메인 / 퍼블리싱 단독작업 / PC, 모바일 적응형웹",
             url: "https://www.dmsn.tv/shop",
             important: false,
-            tag: ["#adaptive"],
+            tag: ["#pc", "#mobile"],
             detail: ""
         },
         {
             id: 8,
             cate: "responsive",
             year: "2022-2021",
-            img: "/images/work/img_proj17.png",
+            img: "/images/work/img_proj21.png",
             title: "영월청년사업단",
             project: "영월청년사업단 사이트 구축",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -112,7 +112,8 @@ const data = {
             title: "비너스이숍 모바일앱",
             project: "비너스이숍 모바일앱 리뉴얼",
             summary: "메인 / 퍼블리싱 단독작업 / 하이브리드앱",
-            url: "https://github.com/gwonminji/mobile-eshop",
+            // url: "https://github.com/gwonminji/mobile-eshop",
+            url: "",
             important: true,
             tag: ["#hybrid app", "#webview"],
             detail: "비너스 브랜드의 자사 쇼핑몰 어플리케이션입니다. 기존 서비스의 디자인 리뉴얼 프로젝트로 하이브리드앱 웹뷰 퍼블리싱 파트를 전담하여 UI 개발 업무를 맡았습니다. 오랫동안 운영되어 온 서비스였던 만큼 레거시 코드를 걷어내고 개선하는 작업들이 많이 필요했습니다."
@@ -127,7 +128,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹",
             url: "",
             important: false,
-            tag: ["#bootstrap"],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -140,7 +141,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹",
             url: "",
             important: false,
-            tag: ["#adaptive"],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -166,7 +167,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹 / Bootstrap",
             url: "",
             important: false,
-            tag: ["#bootstrap"],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -179,7 +180,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹",
             url: "",
             important: false,
-            tag: [""],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -192,7 +193,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹",
             url: "",
             important: false,
-            tag: [""],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -205,7 +206,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹",
             url: "",
             important: false,
-            tag: [""],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -218,7 +219,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹 / Bulma css / dhtmlx grid",
             url: "",
             important: false,
-            tag: ["#bulma css", "#dhtmlx grid"],
+            tag: ["#pc", "#bulma css", "#dhtmlx grid"],
             detail: ""
         },
         {
@@ -231,7 +232,7 @@ const data = {
             summary: "서브 / 퍼블리싱 참여도 50% / PC웹",
             url: "",
             important: false,
-            tag: [""],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -257,7 +258,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹 / 공공데이터 기반 지도연계 및 부동산 정보 제공",
             url: "",
             important: false,
-            tag: [""],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -270,7 +271,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / Bootstrap / ChartJS",
             url: "",
             important: false,
-            tag: ["#bootstrap", "#chart.js"],
+            tag: ["#responsive", "#bootstrap", "#chart.js"],
             detail: ""
         },
         {
@@ -283,7 +284,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / PC웹 / Bootstrap",
             url: "",
             important: false,
-            tag: [""],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -296,7 +297,7 @@ const data = {
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / Bootstrap",
             url: "",
             important: false,
-            tag: ["#bootstrap"],
+            tag: ["#responsive", "#bootstrap"],
             detail: ""
         },
         {
@@ -314,15 +315,15 @@ const data = {
         },
         {
             id: 25,
-            cate: "responsive",
+            cate: "pc",
             year: "",
             img: "/images/work/img_proj4.jpg",
             title: "KORAIL 스마트 학사관리 시스템 적성검사",
             project: "KORAIL 스마트 학사관리 시스템 적성검사 구축",
-            summary: "서브 / 퍼블리싱 참여도 50% / 반응형웹",
+            summary: "서브 / 퍼블리싱 참여도 50% / PC웹",
             url: "https://kra.korail.com",
             important: false,
-            tag: ["#responsive"],
+            tag: ["#pc"],
             detail: ""
         },
         {
@@ -348,7 +349,7 @@ const data = {
             summary: "서브 / 퍼블리싱 참여도 50% / PC, 모바일 적응형웹 / print css",
             url: "http://membership.koreanurse.or.kr",
             important: false,
-            tag: [""],
+            tag: ["#pc", "#mobile"],
             detail: ""
         },
         {
@@ -361,7 +362,7 @@ const data = {
             summary: "서브 / 퍼블리싱 참여도 40% / PC, 모바일 적응형웹",
             url: "http://lic.kna.or.kr/lic/user/main.do",
             important: false,
-            tag: [""],
+            tag: ["#pc", "#mobile"],
             detail: ""
         }
     ]

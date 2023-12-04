@@ -108,6 +108,8 @@
   }
 }
 .img-box{
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   border-radius: 16px;
@@ -119,12 +121,7 @@
     padding: 75% 0 0 0;
   }
   img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    @include img-center-crop;
+    @include img-100auto;
   }
 }
 .year{
