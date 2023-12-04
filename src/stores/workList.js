@@ -108,7 +108,7 @@ const data = {
             id: 9,
             cate: "responsive",
             year: "2021",
-            img: "/images/work/img_proj21.jpg",
+            img: "/images/work/img_proj21.png",
             title: "학생정신건강지원센터",
             project: "학생정신건강지원센터 리뉴얼",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
