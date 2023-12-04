@@ -88,6 +88,7 @@ export default function Contact(){
         emailjs.sendForm("service_milpfrm", "template_1ys7jcl", form.current, "aI8pJKnAI1GBX8lUG")
             .then((result) => {
                 console.log(result.text);
+                alert("메일 전송이 완료되었습니다.");
             }, (error) => {
                 console.log(error.text);
             });
