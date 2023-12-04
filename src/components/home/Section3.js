@@ -75,17 +75,22 @@ export default function Section3(){
                         WORK<br />
                         EXPERIENCE
                     </motion.h1>
-                    <motion.a 
-                        href="/work" 
+                    <motion.span 
+                        // href="/work" 
                         className={styles.link}
                         variants={Hover}
                         initial="initial"
                         whileHover="whileHover"
                         whileTap="whileTap" 
-                        title="포트폴리오 더 보기"
+                        // title="포트폴리오 더 보기"
                     >
-                        포트폴리오 더 보기
-                    </motion.a>
+                        <Link 
+                            to="/work" 
+                            title="포트폴리오 더 보기"
+                        >
+                            포트폴리오 더 보기
+                        </Link>
+                    </motion.span>
                 </div>
                 <div className={styles["list-box"]}>
                     <motion.div className={styles.bg} style={{ scaleX: scrollYProgress }}></motion.div>
