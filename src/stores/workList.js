@@ -4,7 +4,7 @@ const data = {
             id: 1,
             cate: "responsive",
             year: "2023",
-            img: "/images/work/img_proj28.png",
+            img: "/images/work/img_proj29.png",
             title: "에이엔테크놀로지",
             project: "에이엔테크놀로지 사이트 구축",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -17,7 +17,7 @@ const data = {
             id: 2,
             cate: "responsive",
             year: "2022",
-            img: "/images/work/img_proj27.png",
+            img: "/images/work/img_proj28.png",
             title: "서울대공대여성동창회",
             project: "서울대공대여성동창회 사이트 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -30,7 +30,7 @@ const data = {
             id: 3,
             cate: "responsive",
             year: "2022",
-            img: "/images/work/img_proj26.png",
+            img: "/images/work/img_proj27.png",
             title: "빵준서라운지",
             project: "빵준서라운지 사이트 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -43,7 +43,7 @@ const data = {
             id: 4,
             cate: "responsive",
             year: "2021",
-            img: "/images/work/img_proj25.png",
+            img: "/images/work/img_proj26.png",
             title: "demasian 브랜드사이트",
             project: "demasian 브랜드사이트 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -56,7 +56,7 @@ const data = {
             id: 5,
             cate: "responsive",
             year: "2023 - 2021",
-            img: "/images/work/img_proj24.png",
+            img: "/images/work/img_proj25.png",
             title: "웨비나 - 기아인사이트",
             project: "웨비나 - 기아인사이트 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹 / vue.js 퍼블리싱",
@@ -69,7 +69,7 @@ const data = {
             id: 6,
             cate: "responsive",
             year: "2023-2021",
-            img: "/images/work/img_proj23.png",
+            img: "/images/work/img_proj24.png",
             title: "마켓센스 쇼핑몰",
             project: "마켓센스 쇼핑몰 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
@@ -82,7 +82,7 @@ const data = {
             id: 7,
             cate: "adaptive",
             year: "2023-2021",
-            img: "/images/work/img_proj22.png",
+            img: "/images/work/img_proj23.png",
             title: "데마시안샵 쇼핑몰",
             project: "데마시안샵 쇼핑몰 운영",
             summary: "메인 / 퍼블리싱 단독작업 / PC, 모바일 적응형웹",
@@ -95,31 +95,43 @@ const data = {
             id: 8,
             cate: "responsive",
             year: "2022-2021",
-            img: "/images/work/img_proj21.png",
+            img: "/images/work/img_proj22.png",
             title: "영월청년사업단",
             project: "영월청년사업단 사이트 구축",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
-            url: "https://www.yw.go.kr/youth/",
+            url: "https://www.yw.go.kr/youth",
             important: false,
             tag: ["#responsive"],
             detail: ""
         },
         {
             id: 9,
+            cate: "responsive",
+            year: "2021",
+            img: "/images/work/img_proj21.jpg",
+            title: "학생정신건강지원센터",
+            project: "학생정신건강지원센터 리뉴얼",
+            summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
+            url: "https://www.smhrc.kr",
+            important: false,
+            tag: ["#responsive"],
+            detail: ""
+        },
+        {
+            id: 10,
             cate: "mobile",
             year: "2021-2020",
             img: "/images/work/img_proj20.png",
             title: "비너스이숍 모바일앱",
             project: "비너스이숍 모바일앱 리뉴얼",
             summary: "메인 / 퍼블리싱 단독작업 / 하이브리드앱",
-            // url: "https://github.com/gwonminji/mobile-eshop",
             url: "",
             important: true,
             tag: ["#hybrid app", "#webview"],
             detail: "비너스 브랜드의 자사 쇼핑몰 어플리케이션입니다. 기존 서비스의 디자인 리뉴얼 프로젝트로 하이브리드앱 웹뷰 퍼블리싱 파트를 전담하여 UI 개발 업무를 맡았습니다. 오랫동안 운영되어 온 서비스였던 만큼 레거시 코드를 걷어내고 개선하는 작업들이 많이 필요했습니다."
         },
         {
-            id: 10,
+            id: 11,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj19.jpg",
@@ -132,7 +144,7 @@ const data = {
             detail: ""
         },
         {
-            id: 11,
+            id: 12,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj18.jpg",
@@ -145,7 +157,7 @@ const data = {
             detail: ""
         },
         {
-            id: 12,
+            id: 13,
             cate: "responsive",
             year: "2020-2019",
             img: "/images/work/img_proj17.png",
@@ -158,7 +170,7 @@ const data = {
             detail: "삼성증권을 소개하기 위한 웹사이트입니다. 메인 페이지 진입 시 fullpage.js를 사용한 스크롤 인터랙션을 통해 사용자의 이목을 끌고 흥미를 유지하여 콘텐츠에 집중할 수 있게 합니다. 국/영문 반응형 UI를 적용했습니다. 또한 웹접근성 인증마크를 필수로 획득해야하는 프로젝트였고, 웹와치 접근성 인증마크 획득으로 결과물의 완성도를 높였습니다."
         },
         {
-            id: 13,
+            id: 14,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj16.jpg",
@@ -171,7 +183,7 @@ const data = {
             detail: ""
         },
         {
-            id: 14,
+            id: 15,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj15.jpg",
@@ -184,7 +196,7 @@ const data = {
             detail: ""
         },
         {
-            id: 15,
+            id: 16,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj14.jpg",
@@ -197,7 +209,7 @@ const data = {
             detail: ""
         },
         {
-            id: 16,
+            id: 17,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj13.jpg",
@@ -210,7 +222,7 @@ const data = {
             detail: ""
         },
         {
-            id: 17,
+            id: 18,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj12.jpg",
@@ -223,7 +235,7 @@ const data = {
             detail: ""
         },
         {
-            id: 18,
+            id: 19,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj11.jpg",
@@ -236,7 +248,7 @@ const data = {
             detail: ""
         },
         {
-            id: 19,
+            id: 20,
             cate: "responsive",
             year: "",
             img: "/images/work/img_proj10.png",
@@ -249,7 +261,7 @@ const data = {
             detail: ""
         },
         {
-            id: 20,
+            id: 21,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj9.jpg",
@@ -262,7 +274,7 @@ const data = {
             detail: ""
         },
         {
-            id: 21,
+            id: 22,
             cate: "responsive",
             year: "",
             img: "/images/work/img_proj8.jpg",
@@ -275,7 +287,7 @@ const data = {
             detail: ""
         },
         {
-            id: 22,
+            id: 23,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj7.jpg",
@@ -288,7 +300,7 @@ const data = {
             detail: ""
         },
         {
-            id: 23,
+            id: 24,
             cate: "responsive",
             year: "",
             img: "/images/work/img_proj6.png",
@@ -301,7 +313,7 @@ const data = {
             detail: ""
         },
         {
-            id: 24,
+            id: 25,
             cate: "responsive",
             year: "",
             img: "/images/work/img_proj5.png",
@@ -314,7 +326,7 @@ const data = {
             detail: ""
         },
         {
-            id: 25,
+            id: 26,
             cate: "pc",
             year: "",
             img: "/images/work/img_proj4.jpg",
@@ -327,7 +339,7 @@ const data = {
             detail: ""
         },
         {
-            id: 26,
+            id: 27,
             cate: "responsive",
             year: "",
             img: "/images/work/img_proj3.png",
@@ -340,7 +352,7 @@ const data = {
             detail: ""
         },
         {
-            id: 27,
+            id: 28,
             cate: "adaptive",
             year: "",
             img: "/images/work/img_proj2.png",
@@ -353,7 +365,7 @@ const data = {
             detail: ""
         },
         {
-            id: 28,
+            id: 29,
             cate: "adaptive",
             year: "",
             img: "/images/work/img_proj1.png",
