@@ -52,7 +52,7 @@ function App() {
       <Header />
       <SlideMenu />
       <AnimatePresence>
-        <Routes>
+        <Routes basename="/">
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/work" element={<Work />}/>
