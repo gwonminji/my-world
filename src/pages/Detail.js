@@ -9,7 +9,7 @@ import styles from "@styles/pages/detail.module.scss";
 export default function Detail(){    
     const location = useLocation();
     const data = location.state.data;
-    console.log(data);
+    // console.log(data);
 
     return(
         <main>
