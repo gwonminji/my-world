@@ -73,7 +73,7 @@ const data = {
             title: "마켓센스 쇼핑몰",
             project: "마켓센스 쇼핑몰 구축 및 운영",
             summary: "메인 / 퍼블리싱 단독작업 / 반응형웹",
-            url: "https://mkss.app",
+            url: "",
             important: true,
             tag: ["#responsive", "#scss"],
             detail: "누구나 쇼핑몰을 개설할 수 있고, 쇼핑을 하면 후원이 되는 후원 플랫폼입니다. UX/UI를 논의하기 위해 Zeplin을 활용했습니다. 퍼블리싱 파트를 전담하여 scss를 이용한 UI 개발을 진행했습니다. 개인 취향을 고려한 쇼핑몰 테마(컬러) 선택 기능을 넣었고, 반응형 UI를 적용하여 결과물의 완성도를 높였습니다."
