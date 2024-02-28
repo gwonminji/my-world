@@ -32,7 +32,7 @@ export default function Footer(){
                     ️❤️
                     </motion.span>
                 </p>
-                <p>&copy; 2023 gwonminji.github.io</p>
+                <p>&copy; 2024 gwonminji.github.io</p>
             </div>
         </footer>
     )
