@@ -1,94 +1,94 @@
 @import "@styles/helpers/global";
 
-.section{
-    position: relative;
-    background: #fff;
-    padding: 100px 0;
-    z-index: 1;
+.section {
+  position: relative;
+  background: #fff;
+  padding: 100px 0;
+  z-index: 1;
 }
-.title{
-    font-size: 56px;
-    color: $color-dark-navy;
-    font-weight: 700;
-    line-height: 1.5;
-    margin: 200px 0 100px 0;
+.title {
+  font-size: 56px;
+  color: $color-dark-navy;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 200px 0 100px 0;
 }
-.box{
+.box {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  margin: 0 auto 100px;
+  width: 500px;
+  height: 250px;
+  @include card-box-shadow;
+  border-radius: 12px;
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.profile {
+  margin: 0 0 0 24px;
+  li {
     display: flex;
     align-items: center;
-    padding: 40px;
-    margin: 0 auto 100px;
-    width: 500px;
-    height: 250px;
-    @include card-box-shadow;
-    border-radius: 12px;
-}
-.img-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    overflow: hidden;
-    img{
-        display: block;
-        width: 100%;
-        height: auto;
+    font-size: 20px;
+    color: $color-dark-gray;
+    font-weight: 600;
+    line-height: 2.2;
+    svg {
+      margin: 0 8px 0 0;
+      color: $color-dark-navy;
     }
-}
-.profile{
-    margin: 0 0 0 24px;
-    li{
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        color: $color-dark-gray;
-        font-weight: 600;
-        line-height: 2.2;
-        svg{
-            margin: 0 8px 0 0;
-            color: $color-dark-navy;
-        }
-    }
+  }
 }
 
-@include tablet{
-    .title{
-        margin: 160px 0 60px 0;
-        font-size: 48px;
-    }
-    .section{
-        padding: 80px 0;
-    }
-    .title1{
-        font-size: 48px;
-        margin: 180px 0 80px 0;
-    }
+@include tablet {
+  .title {
+    margin: 160px 0 60px 0;
+    font-size: 48px;
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .title1 {
+    font-size: 48px;
+    margin: 180px 0 80px 0;
+  }
 }
 
-@include mobile{
-    .title{
-        margin: 120px 0 40px 0;
-        font-size: 32px;
+@include mobile {
+  .title {
+    margin: 120px 0 40px 0;
+    font-size: 32px;
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .title1 {
+    font-size: 32px;
+    margin: 100px 0 60px 0;
+  }
+  .box {
+    flex-direction: column;
+    margin: 0 auto 40px;
+    width: 100%;
+    height: auto;
+  }
+  .profile {
+    margin: 40px 0 0 0;
+    li {
+      font-size: 16px;
     }
-    .section{
-        padding: 40px 0;
-    }
-    .title1{
-        font-size: 32px;
-        margin: 100px 0 60px 0;
-    }
-    .box{
-        flex-direction: column;
-        margin: 0 auto 40px;
-        width: 100%;
-        height: auto;
-    }
-    .profile{
-        margin: 40px 0 0 0;
-        li{
-            font-size: 18px;
-        }
-    }
+  }
 }
