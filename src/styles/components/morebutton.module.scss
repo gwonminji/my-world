@@ -1,0 +1,44 @@
+@import "@styles/helpers/global";
+
+.link {
+  display: inline-block;
+  margin: 80px 0 0 auto;
+  padding: 0 24px 0 10px;
+  position: relative;
+  height: 60px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 60px;
+  border-bottom: 2px solid #fff;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 6px;
+    bottom: -4px;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+  a {
+    color: #fff;
+  }
+}
+
+@include tablet {
+  .link {
+    margin: 20px 0 20px auto;
+    font-size: 20px;
+  }
+}
+
+@include mobile {
+  .link {
+    margin: 12px 0 20px auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+}

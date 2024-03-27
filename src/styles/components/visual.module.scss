@@ -1,45 +1,46 @@
 @import "@styles/helpers/global";
-.visual-wrap{
-    position: relative;
-    height: 100vh;
-    background: $color-dark-navy;
-    overflow: hidden;
-    z-index: 1;
+.visual-wrap {
+  position: relative;
+  height: 100vh;
+  background: $color-dark-navy;
+  overflow: hidden;
+  z-index: 1;
 }
-.visual{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.visual {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.visual-title{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12.5vw;
-    color: #fff;
-    font-weight: 900;
-    span{
-        display: block;
-        &:nth-child(2){
-            text-align: right;
-        }
+.visual-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 12.5vw;
+  color: #fff;
+  font-weight: 900;
+  line-height: 1.4;
+  span {
+    display: block;
+    &:nth-child(2) {
+      text-align: right;
     }
-}
-
-@include tablet{
-    .visual-wrap{
-        height: $mobile-inner-height;
-    }
-    .visual{
-        height: $mobile-inner-height;
-    }
-    .visual-title{
-        font-size: 14vw;
-        line-height: 1.5;
-    }
+  }
 }
 
-@include mobile{
-    .visual-title{
-        font-size: 20vw;
-    }
+@include tablet {
+  .visual-wrap {
+    height: $mobile-inner-height;
+  }
+  .visual {
+    height: $mobile-inner-height;
+  }
+  .visual-title {
+    font-size: 14vw;
+    line-height: 1.5;
+  }
+}
+
+@include mobile {
+  .visual-title {
+    font-size: 20vw;
+  }
 }

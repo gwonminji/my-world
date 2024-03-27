@@ -18,21 +18,22 @@ export default function Work() {
   const visualText = ["My", "Portfolio"];
 
   const filters = ["all", "responsive", "adaptive", "pc", "mobile"];
+  // const filters = ["all", "responsive", "pc", "mobile"];
 
   const title = "Portfolio";
 
   const [displayData, setDisplayData] = useState(work.items);
   const [active, setActive] = useState("all");
 
-  useEffect(() => {
-    const cateId = sessionStorage.getItem("cateId");
-    if (cateId === null || cateId === "undefined") {
-      return;
-    } else {
-      filterHandler(cateId);
-      sessionStorage.removeItem("cateId");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const cateId = sessionStorage.getItem("cateId");
+  //   if (cateId === null || cateId === "undefined") {
+  //     return;
+  //   } else {
+  //     filterHandler(cateId);
+  //     sessionStorage.removeItem("cateId");
+  //   }
+  // }, []);
 
   const filterHandler = (cate) => {
     if (cate === active) return;
@@ -51,17 +52,17 @@ export default function Work() {
     }, 400);
   };
 
-  const setCateId = () => {
-    sessionStorage.setItem("cateId", active);
-  };
+  // const setCateId = () => {
+  //   sessionStorage.setItem("cateId", active);
+  // };
 
-  const [modalOpen, setModalOpen] = useState(false);
-  const [idx, setIdx] = useState(null);
+  // const [modalOpen, setModalOpen] = useState(false);
+  // const [idx, setIdx] = useState(null);
 
-  const modalHandler = (e) => {
-    setModalOpen(!modalOpen);
-    setIdx(e.target.id);
-  };
+  // const modalHandler = (e) => {
+  //   setModalOpen(!modalOpen);
+  //   setIdx(e.target.id);
+  // };
 
   return (
     <motion.main
@@ -102,7 +103,7 @@ export default function Work() {
             ))}
           </div>
           <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 767: 2, 1023: 3 }}
+            columnsCountBreakPoints={{ 350: 1, 767: 2, 1023: 2 }}
           >
             <Masonry className={styles.list}>
               {/* <AnimatePresence> */}
@@ -124,6 +125,7 @@ export default function Work() {
                     <motion.img
                       src={`${process.env.PUBLIC_URL}${item.img}`}
                       className={styles.img}
+                      alt={item.project}
                     />
                   </div>
                   <motion.div
@@ -181,7 +183,7 @@ export default function Work() {
         </motion.div>
       </section>
       <Marquee />
-      {modalOpen && <Modal modalHandler={modalHandler} idx={idx} />}
+      {/* {modalOpen && <Modal modalHandler={modalHandler} idx={idx} />} */}
     </motion.main>
   );
 }

@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 import Header from "@components/Header";
 import Footer from "@components/Footer";
-import SlideMenu from "@components/SlideMenu";
+// import SlideMenu from "@components/SlideMenu";
 
 import Home from "@pages/Home";
 import About from "@pages/About";
@@ -38,26 +38,26 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 //모바일에서 브라우저 주소창, 하단 버튼영역을 고려한 전체높이 설정
-let vh = window.innerHeight * 0.01 //innerHeight : 실질적으로 브라우저에서 보이는 높이
+let vh = window.innerHeight * 0.01; //innerHeight : 실질적으로 브라우저에서 보이는 높이
 
-document.documentElement.style.setProperty('--vh', `${vh}px`)
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01
-  document.documentElement.style.setProperty('--vh', `${vh}px`)
-})
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
 function App() {
   return (
     <div className="wrap">
       <GlobalStyles />
       <Header />
-      <SlideMenu />
+      {/* <SlideMenu /> */}
       <AnimatePresence>
         <Routes basename="/">
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/work" element={<Work />}/>
-          <Route path="/work/:id" element={<Detail />}/>
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/:id" element={<Detail />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
       <Footer />

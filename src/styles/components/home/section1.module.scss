@@ -1,88 +1,88 @@
 @import "@styles/helpers/global";
 
-.section{
-    position: relative;
-    height: 100vh;
-    background: $color-dark-navy;
-    z-index: 1;
+.section {
+  position: relative;
+  height: 100vh;
+  background: $color-dark-navy;
+  z-index: 1;
 }
-.inner{
-    @include desktop-inner;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+.inner {
+  @include desktop-inner;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
-.visual{
-    min-height: calc(100vh - 163px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.visual {
+  min-height: calc(100vh - 163px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.title{
-    font-family: 'Poppins', sans-serif;
-    font-size: 10vw;
-    color: #fff;
-    line-height: 1.25;
-    font-weight: 700;
-    text-align: center;
-    span{
-        display: inline-block;
-    }
-}
-.scroll{
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 8px;
-    &>span{
-        display: inline-block;
-        margin: 0 16px 0 0;
-    }
-    &>div{
-        display: inline-block;
-        max-width: 32px;
-    }
-}
-.bounce{
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 10vw;
+  color: #fff;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  span {
     display: inline-block;
+  }
+}
+.scroll {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 8px;
+  & > span {
+    display: inline-block;
+    margin: 0 16px 0 0;
+  }
+  & > div {
+    display: inline-block;
+    max-width: 32px;
+  }
+}
+.bounce {
+  display: inline-block;
 }
 
-@include tablet{
-    .inner{
-        @include tablet-inner;
-    }
-    .title{
-        font-size: 18vw;
-        line-height: 1.5;
-    }
-    .scroll{
-        font-size: 16px;
-    }
+@include tablet {
+  .inner {
+    @include tablet-inner;
+  }
+  .title {
+    font-size: 18vw;
+    line-height: 1.5;
+  }
+  .scroll {
+    font-size: 16px;
+  }
 }
 
-@include tablet{
-    .section{
-        height: $mobile-inner-height;
-    }
-    .visual{
-        min-height: calc(#{$mobile-inner-height} - 163px);
-    }
+@include tablet {
+  .section {
+    height: $mobile-inner-height;
+  }
+  .visual {
+    min-height: calc(#{$mobile-inner-height} - 163px);
+  }
 }
-@include mobile{
-    .inner{
-        @include mobile-inner;
-    }
-    .title{
-        font-size: 16vw;
-    }
-    .scroll{
-        font-size: 14px;
-    }
+@include mobile {
+  .inner {
+    @include mobile-inner;
+  }
+  .title {
+    font-size: 16vw;
+  }
+  .scroll {
+    font-size: 14px;
+  }
 }
