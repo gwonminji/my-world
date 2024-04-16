@@ -19,14 +19,14 @@ export default function Section1() {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.12,
+        staggerChildren: 0.125,
       },
     },
   };
 
   const visualTextAnim = {
-    initial: { opacity: 0, y: 20, rotate: 45 },
-    animate: { opacity: 1, y: 0, rotate: 0 },
+    initial: { opacity: 0.1, y: 20 },
+    animate: { opacity: 1, y: 0 },
   };
 
   const innerRef = useRef(null);
